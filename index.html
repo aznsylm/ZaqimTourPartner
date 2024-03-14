@@ -3,13 +3,15 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>TravelNow</title>
+    <title>Zaqim Tour Partner</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
 
     <link rel="shortcut icon" href="img/Sedan.png" type="image/x-icon">
 
     <!-- css  -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome/css/style.css">
+    <link rel="stylesheet" href="fontawesome/css/footer.css">
+    <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
 
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -30,14 +32,16 @@
 
     <!-- Animation On Scrolling  -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="https://kit.fontawesome.com/b20fec971f.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="gray-bg">
     <!-- Navbar Start  -->
     <nav class="navbar navbar-expand-md ">
-        <div class="container ">
+        <div class="container">
             <a class="navbar-brand" href="index.html">
-                <i class="bi bi-car-front"></i> TravelNow
+                <i class="bi bi-car-front "></i> ZaqimTourPartner
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -47,19 +51,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Beranda</a>
+                        <a class="nav-link hvr-underline-from-left" href="#">Beranda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Tentang Kami</a>
+                        <a class="nav-link hvr-underline-from-left" href="about.html">Tentang Kami</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="nav-link dropdown-toggle hvr-underline-from-left hvr-icon-hang" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             Daftar Sewa
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Mobil</a></li>
-                            <li><a class="dropdown-item" href="#">Mini Bus</a></li>
+                            <li><a class="dropdown-item" href="#daftar-sewa">Mobil</a></li>
+                            <li><a class="dropdown-item" href="#review">Review</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
@@ -67,7 +71,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Kontak</a>
+                        <a class="nav-link hvr-underline-from-left" href="#">Kontak</a>
                     </li>
                 </ul>
             </div>
@@ -81,11 +85,13 @@
             <div class="content">
                 <div class="text-cont">
                     <h1 class="header">
-                        <span class="first-clr">Your</span> Go to <span class="first-clr">Travel</span> partner<span
-                            class="first-clr"></span>
+                        Jelajahi <span class="first-clr">Destinasi, </span> Nikmati <span
+                            class="first-clr">Kenangan</span>
+                        Bersama Kami<span class="first-clr"></span>
                     </h1>
                     <p class="description">
-                        Discover new things and Enjoy the richness of your life with us.
+                        Nikmati setiap momen petualangan Anda dengan kepercayaan penuh pada layanan berkualitas dari
+                        ZaqimTourTravel.
                     </p>
                 </div>
             </div>
@@ -93,100 +99,53 @@
     </section>
 
     <!-- Tentang Kami  -->
-    <section class="tentang p-5 ">
+    <section class="tentang p-5 mt-5">
         <div class="container text-center" data-aos="fade-up" data-aos-duration="2000">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12 text-center title-box">
-                    <h2>TravelNow</h2>
-                    <h2>Terbaik di Yogyakarta dan berpengalaman</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ut amet rem in perspiciatis omnis
-                        mollitia voluptates rerum corrupti repudiandae!</p>
+                    <h2>ZaqimTourPartner</h2>
+                    <h2>Aman, Amanah, dan Terpercaya</h2>
+                    <p>ZaqimTourPartner merupakan bidang usaha yang bergerak diPelayanan transportasi dan jasa
+                        wisata, dengan memberikan pelayanan dengan motto “Aman Amanah dan Terpercaya”. Berdiri sejak
+                        2019, yang mulanya kami hanya bermodal beberapa kendaraan yang bergerak di bidang jasa
+                        transportasi. Melihat potensi wisata Yogyakarta yang sangat diminati oleh wisatawan domestik
+                        maupun mancan negara, maka pada tahun 2019 kami mendirikan ZaqimTourPartner, dengan alamat di
+                        Jl.
+                        Kramat No. 18 Sidoarum, Godean, Sleman Yogyakarta. </p>
                 </div>
-                <div class="col-lg-6 col-md-12 text-center image-box">
-                    <img src="img/1.png" alt="">
+                <div class="col-lg-6 col-md-12 image-box">
+                    <img src="img/img-mobil/Bis1.png" alt="">
                     <div class="middle">
                         <a href="#" class="lengkap">Selengkapnya</a>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Pemisah  -->
+        <div class="container mt-5" data-aos="fade-up" data-aos-duration="2000">
+            <div class="row tm-section-header">
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <hr>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 text-center">
+                    <hr>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <hr>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Swiper -->
-    <div class="swiper mySwiper" data-aos="fade-up" data-aos-duration="2000">
-        <div class="swiper-wrapper">
-
-            <!-- Slide 1  -->
-            <div class="swiper-slide">
-                <div class="container text-center">
-                    <div class="row align-items-center ">
-                        <div class="swiper-image col-lg-6">
-                            <img src="img/2.png" style="width: 550px; padding: 30px; " alt="">
-                            <div class="center">Travelnow</div>
-                        </div>
-                        <div class="col-lg-6 card-title">
-                            <h2>Slide 1</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat et ratione obcaecati
-                                recusandae beatae aut!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Slide 2  -->
-            <div class="swiper-slide">
-                <div class="container text-center ">
-                    <div class="row align-items-center ">
-                        <div class="swiper-image col-lg-6">
-                            <img src="img/2.png" style="width: 550px; padding: 30px;" alt="">
-                            <div class="center">Travelnow</div>
-                        </div>
-                        <div class="col-lg-6 card-title">
-                            <h2>Slide 2</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat et ratione obcaecati
-                                recusandae beatae aut!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Slide 3  -->
-            <div class="swiper-slide">
-                <div class="container text-center ">
-                    <div class="row align-items-center">
-                        <div class="swiper-image col-lg-6">
-                            <img src="img/3.png" style="width: 550px; padding: 30px;" alt="">
-                            <div class="center">Travelnow</div>
-                        </div>
-                        <div class="col-lg-6 card-title">
-                            <h2>Slide 3</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat et ratione obcaecati
-                                recusandae beatae aut!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination "></div>
-        <div class="autoplay-progress">
-            <svg viewBox="0 0 48 48">
-                <circle cx="24" cy="24" r="20"></circle>
-            </svg>
-            <span></span>
-        </div>
-    </div>
-
     <!-- Daftar Sewa  -->
-    <section class="sewa p-5">
+    <section class="sewa " id="daftar-sewa">
         <div class="container">
 
             <!-- Heading  -->
             <div class="row text-center" data-aos="fade-up" data-aos-duration="2000">
                 <div class="col-md-12">
-                    <h2>DAFTAR SEWA</h2>
+                    <h2 class="hvr-underline-from-left">DAFTAR SEWA</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quia impedit eaque consequatur,
                         nihil sequi.</p>
                 </div>
@@ -200,25 +159,26 @@
                     <div class="card-box col-lg-3 col-md-6 hvr-grow">
                         <div class="card bg-light " data-aos="zoom-in" data-aos-duration="2000">
                             <div class="card-body">
-                                <img src="img/2.png" class="card-img-top" alt="...">
-                                <h5 class="card-title mb-3 pt-2">Mobil 1</h5>
-                                <p class="card-text">Pokoknya Murahh se jogja, oiya minta tolong ya kalau uda selesai
-                                    pakai
-                                    minimal bersihkan dan isi kembali bbmnya woee wkwk</p>
+                                <img src="img/img-mobil/HiaceCommuter.jpg" class="card-img-top" alt="...">
+                                <h5 class="card-title mb-3 pt-2">Toyota Hiace Commuter</h5>
+                                <p class="card-text">Kapasitas terdiri dari 15 Seat + Driver, </p>
                                 <div class="card-icon mb-2">
-                                    <i class="bi bi-person-check-fill"></i> Driver
-                                    <i class="bi bi-fuel-pump-fill"></i> BBM
-                                    <i class="bi bi-stopwatch-fill"></i> 8 Seat
+                                    <i class="bi bi-person-check-fill"></i>Driver
+                                    <i class="bi bi-fuel-pump-fill"></i>BBM
+                                    <i class="bi bi-car-front-fill"></i>Toyota
                                 </div>
-                                <a href="#" class="btn btn-primary">Pesan</a>
+                                <div class="card-icon mb-2">
+                                    <i class="bi bi-cash"></i>Rp. 1.500.000
+                                </div>
+                                <a href="https://wa.me/082332340653" class="btn btn-primary">Whatsapp</a>
                             </div>
                         </div>
                     </div>
                     <div class="card-box col-lg-3 col-md-6 hvr-grow">
                         <div class="card bg-light" data-aos="zoom-in" data-aos-duration="2000">
                             <div class="card-body">
-                                <img src="img/2.png" class="card-img-top" alt="...">
-                                <h5 class="card-title mb-3 pt-2">Mobil 1</h5>
+                                <img src="img/img-mobil/HiacePremio.jpg" class="card-img-top" alt="...">
+                                <h5 class="card-title mb-3 pt-2">Hiace Premio</h5>
                                 <p class="card-text">Pokoknya Murahh se jogja, oiya minta tolong ya kalau uda selesai
                                     pakai
                                     minimal bersihkan dan isi kembali bbmnya woee wkwk</p>
@@ -227,15 +187,15 @@
                                     <i class="bi bi-fuel-pump-fill"></i> BBM
                                     <i class="bi bi-stopwatch-fill"></i> 8 Seat
                                 </div>
-                                <a href="#" class="btn btn-primary">Pesan</a>
+                                <a href="https://wa.me/082332340653" class="btn btn-primary">Whatsapp</a>
                             </div>
                         </div>
                     </div>
                     <div class="card-box col-lg-3 col-md-6 hvr-grow">
                         <div class="card bg-light" data-aos="zoom-in" data-aos-duration="2000">
                             <div class="card-body">
-                                <img src="img/2.png" class="card-img-top" alt="...">
-                                <h5 class="card-title mb-3 pt-2">Mobil 1</h5>
+                                <img src="img/img-mobil/BigBus.jpg" class="card-img-top" alt="...">
+                                <h5 class="card-title mb-3 pt-2">Big Bus</h5>
                                 <p class="card-text">Pokoknya Murahh se jogja, oiya minta tolong ya kalau uda selesai
                                     pakai
                                     minimal bersihkan dan isi kembali bbmnya woee wkwk</p>
@@ -244,15 +204,15 @@
                                     <i class="bi bi-fuel-pump-fill"></i> BBM
                                     <i class="bi bi-stopwatch-fill"></i> 8 Seat
                                 </div>
-                                <a href="#" class="btn btn-primary">Pesan</a>
+                                <a href="https://wa.me/082332340653" class="btn btn-primary">Whatsapp</a>
                             </div>
                         </div>
                     </div>
                     <div class="card-box col-lg-3 col-md-6 hvr-grow">
                         <div class="card bg-light" data-aos="zoom-in" data-aos-duration="2000">
                             <div class="card-body">
-                                <img src="img/2.png" class="card-img-top" alt="...">
-                                <h5 class="card-title mb-3 pt-2">Mobil 1</h5>
+                                <img src="img/img-mobil/MediumBus.jpg" class="card-img-top" alt="...">
+                                <h5 class="card-title mb-3 pt-2">Medium Bus</h5>
                                 <p class="card-text">Pokoknya Murahh se jogja, oiya minta tolong ya kalau uda selesai
                                     pakai
                                     minimal bersihkan dan isi kembali bbmnya woee wkwk</p>
@@ -261,7 +221,7 @@
                                     <i class="bi bi-fuel-pump-fill"></i> BBM
                                     <i class="bi bi-stopwatch-fill"></i> 8 Seat
                                 </div>
-                                <a href="#" class="btn btn-primary">Pesan</a>
+                                <a href="https://wa.me/082332340653" class="btn btn-primary">Whatsapp</a>
                             </div>
                         </div>
                     </div>
@@ -287,8 +247,8 @@
                     <div class="card-box col-lg-3 col-md-6 hvr-grow">
                         <div class="card bg-light" data-aos="zoom-in" data-aos-duration="2000">
                             <div class="card-body">
-                                <img src="img/2.png" class="card-img-top" alt="...">
-                                <h5 class="card-title mb-3 pt-2 ">Mobil 1</h5>
+                                <img src="img/img-mobil/Alpard.jpg" class="card-img-top" alt="...">
+                                <h5 class="card-title mb-3 pt-2 ">Toyota Alphard</h5>
                                 <p class="card-text">Pokoknya Murahh se jogja, oiya minta tolong ya kalau uda selesai
                                     pakai
                                     minimal bersihkan dan isi kembali bbmnya woee wkwk</p>
@@ -297,15 +257,15 @@
                                     <i class="bi bi-fuel-pump-fill"></i> BBM
                                     <i class="bi bi-stopwatch-fill"></i> 8 Seat
                                 </div>
-                                <a href="#" class="btn btn-primary">Pesan</a>
+                                <a href="https://wa.me/082332340653" class="btn btn-primary">Pesan</a>
                             </div>
                         </div>
                     </div>
                     <div class="card-box col-lg-3 col-md-6 hvr-grow">
                         <div class="card bg-light" data-aos="zoom-in" data-aos-duration="2000">
                             <div class="card-body">
-                                <img src="img/2.png" class="card-img-top" alt="...">
-                                <h5 class="card-title mb-3 pt-2">Mobil 1</h5>
+                                <img src="img/img-mobil/Fortuner.jpg" class="card-img-top" alt="...">
+                                <h5 class="card-title mb-3 pt-2">Fortuner</h5>
                                 <p class="card-text">Pokoknya Murahh se jogja, oiya minta tolong ya kalau uda selesai
                                     pakai
                                     minimal bersihkan dan isi kembali bbmnya woee wkwk</p>
@@ -314,15 +274,15 @@
                                     <i class="bi bi-fuel-pump-fill"></i> BBM
                                     <i class="bi bi-stopwatch-fill"></i> 8 Seat
                                 </div>
-                                <a href="#" class="btn btn-primary">Pesan</a>
+                                <a href="https://wa.me/082332340653" class="btn btn-primary">Pesan</a>
                             </div>
                         </div>
                     </div>
                     <div class="card-box col-lg-3 col-md-6 hvr-grow">
                         <div class="card bg-light" data-aos="zoom-in" data-aos-duration="2000">
                             <div class="card-body">
-                                <img src="img/2.png" class="card-img-top" alt="...">
-                                <h5 class="card-title mb-3 pt-2">Mobil 1</h5>
+                                <img src="img/img-mobil/InnovaZenix.jpg" class="card-img-top" alt="...">
+                                <h5 class="card-title mb-3 pt-2">Innova Zenix</h5>
                                 <p class="card-text">Pokoknya Murahh se jogja, oiya minta tolong ya kalau uda selesai
                                     pakai
                                     minimal bersihkan dan isi kembali bbmnya woee wkwk</p>
@@ -331,15 +291,15 @@
                                     <i class="bi bi-fuel-pump-fill"></i> BBM
                                     <i class="bi bi-stopwatch-fill"></i> 8 Seat
                                 </div>
-                                <a href="#" class="btn btn-primary">Pesan</a>
+                                <a href="https://wa.me/082332340653" class="btn btn-primary">Pesan</a>
                             </div>
                         </div>
                     </div>
                     <div class="card-box col-lg-3 col-md-6 hvr-grow">
                         <div class="card bg-light" data-aos="zoom-in" data-aos-duration="2000">
                             <div class="card-body">
-                                <img src="img/2.png" class="card-img-top" alt="...">
-                                <h5 class="card-title mb-3 pt-2">Mobil 1</h5>
+                                <img src="img/img-mobil/InnovaReborn.jpg" class="card-img-top" alt="...">
+                                <h5 class="card-title mb-3 pt-2">Innova Reborn</h5>
                                 <p class="card-text">Pokoknya Murahh se jogja, oiya minta tolong ya kalau uda selesai
                                     pakai
                                     minimal bersihkan dan isi kembali bbmnya woee wkwk</p>
@@ -348,7 +308,79 @@
                                     <i class="bi bi-fuel-pump-fill"></i> BBM
                                     <i class="bi bi-stopwatch-fill"></i> 8 Seat
                                 </div>
-                                <a href="#" class="btn btn-primary">Pesan</a>
+                                <a href="https://wa.me/082332340653" class="btn btn-primary">Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Baris 3  -->
+                <div class="row text-center mt-5">
+                    <div class="card-box col-lg-3 col-md-6 hvr-grow">
+                        <div class="card bg-light" data-aos="zoom-in" data-aos-duration="2000">
+                            <div class="card-body">
+                                <img src="img/img-mobil/AvanzaFWD.jpg" class="card-img-top" alt="...">
+                                <h5 class="card-title mb-3 pt-2 ">Avanza FWD</h5>
+                                <p class="card-text">Pokoknya Murahh se jogja, oiya minta tolong ya kalau uda selesai
+                                    pakai
+                                    minimal bersihkan dan isi kembali bbmnya woee wkwk</p>
+                                <div class="card-icon mb-2">
+                                    <i class="bi bi-person-check-fill"></i> Driver
+                                    <i class="bi bi-fuel-pump-fill"></i> BBM
+                                    <i class="bi bi-stopwatch-fill"></i> 8 Seat
+                                </div>
+                                <a href="https://wa.me/082332340653" class="btn btn-primary">Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-box col-lg-3 col-md-6 hvr-grow">
+                        <div class="card bg-light" data-aos="zoom-in" data-aos-duration="2000">
+                            <div class="card-body">
+                                <img src="img/img-mobil/Avanza.jpg" class="card-img-top" alt="...">
+                                <h5 class="card-title mb-3 pt-2">Avanza</h5>
+                                <p class="card-text">Pokoknya Murahh se jogja, oiya minta tolong ya kalau uda selesai
+                                    pakai
+                                    minimal bersihkan dan isi kembali bbmnya woee wkwk</p>
+                                <div class="card-icon mb-2">
+                                    <i class="bi bi-person-check-fill"></i> Driver
+                                    <i class="bi bi-fuel-pump-fill"></i> BBM
+                                    <i class="bi bi-stopwatch-fill"></i> 8 Seat
+                                </div>
+                                <a href="https://wa.me/082332340653" class="btn btn-primary">Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-box col-lg-3 col-md-6 hvr-grow">
+                        <div class="card bg-light" data-aos="zoom-in" data-aos-duration="2000">
+                            <div class="card-body">
+                                <img src="img/img-mobil/HondaBrio.jpg" class="card-img-top" alt="...">
+                                <h5 class="card-title mb-3 pt-2">Honda Brio</h5>
+                                <p class="card-text">Pokoknya Murahh se jogja, oiya minta tolong ya kalau uda selesai
+                                    pakai
+                                    minimal bersihkan dan isi kembali bbmnya woee wkwk</p>
+                                <div class="card-icon mb-2">
+                                    <i class="bi bi-person-check-fill"></i> Driver
+                                    <i class="bi bi-fuel-pump-fill"></i> BBM
+                                    <i class="bi bi-stopwatch-fill"></i> 8 Seat
+                                </div>
+                                <a href="https://wa.me/082332340653" class="btn btn-primary">Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-box col-lg-3 col-md-6 hvr-grow">
+                        <div class="card bg-light" data-aos="zoom-in" data-aos-duration="2000">
+                            <div class="card-body">
+                                <img src="img/img-mobil/Xpander.jpg" class="card-img-top" alt="...">
+                                <h5 class="card-title mb-3 pt-2">Xpander</h5>
+                                <p class="card-text">Pokoknya Murahh se jogja, oiya minta tolong ya kalau uda selesai
+                                    pakai
+                                    minimal bersihkan dan isi kembali bbmnya woee wkwk</p>
+                                <div class="card-icon mb-2">
+                                    <i class="bi bi-person-check-fill"></i> Driver
+                                    <i class="bi bi-fuel-pump-fill"></i> BBM
+                                    <i class="bi bi-stopwatch-fill"></i> 8 Seat
+                                </div>
+                                <a href="https://wa.me/082332340653" class="btn btn-primary">Pesan</a>
                             </div>
                         </div>
                     </div>
@@ -359,8 +391,15 @@
     </section>
 
     <!-- Quote  -->
-    <section class="quote p-5">
+    <section class="quote p-5 mt-5" id="review" data-aos="fade-up" data-aos-duration="2000">
         <div class="container">
+            <div class="row text-center mb-5" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-md-12">
+                    <h2 class="hvr-underline-from-left">REVIEW</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quia impedit eaque consequatur,
+                        nihil sequi.</p>
+                </div>
+            </div>
             <div class="card">
                 <div class="card-header">
                     Fakta
@@ -371,40 +410,119 @@
                         <footer class="blockquote-footer">Kata Orang Jogja <cite title="Source Title">Google Maps</cite>
                         </footer>
                     </blockquote>
+                    <a href="#" class="btn btn-primary mt-3">Selengkapnya</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer  -->
-    <section class="pt-5 mt-5 footer">
-        <div class="footer-box container-fluid">
-            <div class="row p-3 footer-card p-5">
-                <div class="col-md-6 ">
-                    <h5>Alamat Kami</h5>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4187.9264811885205!2d110.30934348431262!3d-7.782777955272895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7af7fb5c5321ad%3A0x4782e467f6863fa0!2sTravelNow%20Tour%20Partner%20jogja!5e0!3m2!1sid!2sid!4v1709543980877!5m2!1sid!2sid"
-                        width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="col-md-3">
-                    <h2>Kontak</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit debitis accusamus asperiores
-                        temporibus minima voluptas.</p>
-                </div>
-                <div class="col-md-3">
-                    <h2>Lainnya</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit debitis accusamus asperiores
-                        temporibus minima voluptas.</p>
+    <!-- Swiper -->
+    <div class="swiper mySwiper p-5" data-aos="fade-up" data-aos-duration="2000">
+        <div class="swiper-wrapper">
+
+
+            <div class="swiper-slide">
+                <div class="container text-center">
+                    <div class="row align-items-center ">
+                        <div class="swiper-image col-lg-6">
+                            <img src="img/2.png" alt="">
+                            <div class="center">Travelnow</div>
+                        </div>
+                        <div class="col-lg-6 card-title">
+                            <h2>Slide 1</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat et ratione obcaecati
+                                recusandae beatae aut!</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row footer-CR text-center p-3">
-                <div class="col-12 ">
-                    <h6>Copyright 2024 Travelnow. All Right Reserved</h6>
+
+
+            <div class="swiper-slide">
+                <div class="container text-center ">
+                    <div class="row align-items-center ">
+                        <div class="swiper-image col-lg-6">
+                            <img src="img/2.png" alt="">
+                            <div class="center">Travelnow</div>
+                        </div>
+                        <div class="col-lg-6 card-title">
+                            <h2>Slide 2</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat et ratione obcaecati
+                                recusandae beatae aut!</p>
+                        </div>
+                    </div>
                 </div>
+            </div>
+
+
+            <div class="swiper-slide">
+                <div class="container text-center ">
+                    <div class="row align-items-center">
+                        <div class="swiper-image col-lg-6">
+                            <img src="img/3.png" alt="">
+                            <div class="center">Travelnow</div>
+                        </div>
+                        <div class="col-lg-6 card-title">
+                            <h2>Slide 3</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat et ratione obcaecati
+                                recusandae beatae aut!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination "></div>
+        <div class="autoplay-progress">
+            <svg viewBox="0 0 48 48">
+                <circle cx="24" cy="24" r="20"></circle>
+            </svg>
+            <span></span>
+        </div>
+    </div>
+
+    <!-- Footer  -->
+    <footer class="foot">
+        <div class="pages">
+            <div class="menu-items">
+                <a href="index.html"><span class="hvr-underline-from-left hvr-icon-hang">Beranda</span></a>
+                <a href="#"><span class="hvr-underline-from-left hvr-icon-hang">Tentang Kami</span></a>
+                <a href="#"><span class="hvr-underline-from-left hvr-icon-hang">Daftar Sewa</span></a>
+                <a href="#"><span class="hvr-underline-from-left hvr-icon-hang">Kontak</span></a>
             </div>
         </div>
-    </section>
+
+        <div class="logo_bot">
+            <img src="img/Sedan.png">
+            <h3>Pilih Travelnow Sebagai Tour Guide Anda</h3>
+            <div class="newsletter">
+                <input type="text" name="newsletter" value="" placeholder="Masukkan Email Kamu">
+                <button type="submit" name="submit">Kirim </button>
+            </div>
+            <div class="bottom-footer">
+                <p id="customer">Keamanan dan Kenyamanan Anda adalah Prioritas Bagi Kami, Salam hangat</p><br>
+                <p>Copyrights &copy <span id="copyrightYear">2023</span> Travelnow | Designed by <a
+                        href="https://www.linkedin.com/in/aizan-syalim-080a44276" style="text-decoration: none;">Aizan
+                        Syalim</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="follow">
+            <h4 class="hvr-underline-from-left hvr-icon-hang">Follow Us</h4>
+            <div class="follow-social">
+                <a href="https://www.linkedin.com/in/aizan-syalim-080a44276" target="_blank" class="linkedin"><i <i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/zansylm/" target="_blank" class="instagram"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/aznsylm" target="_blank" class="twitter"><i
+                        class="fa-brands fa-github"></i></a>
+            </div>
+
+        </div>
+    </footer>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
