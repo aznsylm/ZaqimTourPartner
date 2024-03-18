@@ -344,6 +344,169 @@ h1, h2 {
     margin-left: 50px;
 }
 
+.fa-2xl {
+    font-size: 2em;
+    line-height: .03125em;
+    vertical-align: -0.1875em;
+}
+
+/* HALAMAN TENTANG KAMI */
+/* ################################################# */
+.tm-banner-inner {
+    height: auto;
+    margin: auto;
+    position: absolute;
+    left: 0px;
+    bottom: 300px;
+    right: 0px;
+}
+
+.tm-banner-title,
+.tm-banner-subtitle,
+.tm-banner-link {
+    text-transform: uppercase;
+}
+
+.tm-banner-title,
+.tm-banner-subtitle {
+    color: white;
+}
+
+.tm-banner-title {
+    font-size: 74px;
+    font-weight: 600;
+}
+
+.tm-banner-subtitle {
+    font-size: 34px;
+}
+
+.tm-yellow-text {
+    color: #fcdd44;
+}
+
+.tm-banner-link {
+    background: rgba(0, 0, 0, 0.50) none repeat scroll 0% 0%;
+    border: 1px solid #d2b731;
+    color: #fff;
+    font-weight: 600;
+    display: inline-block;
+    padding: 15px 40px;
+    margin-top: 30px;
+    transition: all 0.3s ease;
+    border-radius: 30px;
+}
+
+.tm-banner-link:hover,
+.tm-banner-link:focus {
+    background: rgba(252, 221, 68, 1);
+    color: #000;
+}
+
+.flexslider.flexslider-banner {
+    max-width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.flexslider.flexslider-banner .slides>li {
+    text-align: center;
+}
+
+.flexslider.flexslider-banner .flex-direction-nav a:before {
+    color: #fcdd44;
+}
+
+.flex-direction-nav a {
+    height: 50px;
+}
+
+.flexslider {
+    margin: 0;
+    padding: 0;
+}
+
+.flexslider .slides img {
+    width: 100%;
+    display: block;
+}
+
+.flexslider .slides:after {
+    content: "\0020";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.tm-box .carousel-item img {
+    width: auto;
+    height: 250px;
+}
+
+.slides,
+.slides>li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.slider-social {
+    text-align: right;
+}
+
+.tm-social-icon {
+    color: #b1b1b1;
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+#tiktok {
+    color: #000000;
+}
+
+#fac {
+    color: #1e549f;
+}
+
+#instagram {
+    color: #E60023;
+}
+
+#goog {
+    color: #4285F4;
+}
+
+.tm-box {
+    margin: 100px 0;
+}
+
+.tm-box .col-12 .row {
+    padding: 50px 20px;
+}
+
+.tm-teks {
+    background-color: #fff;
+}
+
+.section-padding-bottom {
+    padding-bottom: 60px;
+}
+
+.tm-section-header {
+    margin-bottom: 70px;
+    overflow: hidden;
+}
+
+.tm-teks .section-margin-top {
+    margin-top: 100px;
+}
+
+.tm-teks .tm-section-heade .row {
+    display: inline;
+}
+
 @media (min-width:768px) and (max-width:1023px) {
     .swiper .swiper-slide h1 {
         font-weight: 400px;
