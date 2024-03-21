@@ -10,6 +10,7 @@
   background-color: #400361;
   text-align: center;
   color: white;
+  font-style: italic;
 }
 
 footer .pages {
@@ -27,11 +28,11 @@ footer .menu-items {
 
 footer .menu-items a {
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 400;
   font-family: "Kanit", sans-serif;
   letter-spacing: 1px;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   padding: 0rem;
   margin-bottom: 2rem;
 }
@@ -50,6 +51,10 @@ footer .logo_bot img {
 
 .logo_bot h3 {
   color: white;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "Kanit", sans-serif;
+  font-style: italic;
 }
 
 .newsletter {
@@ -100,14 +105,14 @@ footer .follow h4 {
 }
 
 footer .follow a {
-  size: 9rem;
+  font-size: 1.2em;
   width: auto;
   color: rgb(240, 235, 235);
   transition: 0.5s;
 }
 
 #customer {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #fff;
 }
 

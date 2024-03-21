@@ -221,7 +221,10 @@ hr {
 }
 
 .h1, h1 {
-    font-size: calc(1.375rem + 1.5vw)
+    font-size: calc(1.375rem + 1.5vw);
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 @media (min-width:1200px) {
@@ -231,13 +234,11 @@ hr {
 }
 
 .h2, h2 {
-    font-size: calc(1.325rem + .9vw)
-}
-
-@media (min-width:1200px) {
-    .h2, h2 {
-        font-size: 2rem
-    }
+    font-size: calc(1.325rem + .9vw);
+    font-family: "Kanit", sans-serif;
+    font-weight: 350;
+    font-style: normal;
+    text-transform: capitalize;
 }
 
 .h3, h3 {

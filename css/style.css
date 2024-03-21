@@ -6,9 +6,9 @@
     box-sizing: border-box;
 }
 
-h1, h2 {
-    font-family: "Kanit", sans-serif;
-    font-weight: 800px;
+p {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
 }
 
 .gray-bg {
@@ -103,8 +103,6 @@ h1, h2 {
 /* Navbar  */
 .navbar {
     background-color: #400361;
-    font-weight: bold;
-    font-family: "Kanit", sans-serif;
     letter-spacing: 0.7px;
 }
 
@@ -113,7 +111,13 @@ h1, h2 {
 }
 
 .navbar .navbar-brand {
-    color: #fff;
+    color: #ffffff;
+    font-family: "Kanit", sans-serif;
+    font-weight: bold;
+}
+
+.navbar .navbar-brand:hover {
+    color: #ffffff;
 }
 
 .navbar .dropdown-menu .dropdown-item {
@@ -121,7 +125,11 @@ h1, h2 {
 }
 
 .navbar .navbar-nav li a {
-    color: #fff;
+    color: #ffffff;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
 }
 
 /* Hero Section */
@@ -144,7 +152,6 @@ h1, h2 {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 .landing-page .content .text-cont {
@@ -153,10 +160,12 @@ h1, h2 {
 
 .landing-page .content .text-cont .header {
     font-size: 4.5rem;
-    font-weight: 900;
+    font-weight: 700;
     line-height: 1.1;
+    letter-spacing: 1px;
+    text-transform: capitalize;
     color: #FFF;
-    font-family: "Kanit", sans-serif;
+    /* font-family: "Kanit", sans-serif; */
 }
 
 .landing-page .content .text-cont .header span {
@@ -164,11 +173,12 @@ h1, h2 {
 }
 
 .landing-page .content .text-cont .description {
-    font-size: 18px;
     font-family: "Kanit", sans-serif;
-    /* margin: 30px 0; */
-    color: #ffffff;
-    font-weight: large;
+    font-weight: 350;
+    font-style: normal;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #ffff;
     width: 80%;
 }
 
@@ -186,6 +196,8 @@ h1, h2 {
     transition: .5s ease;
     backface-visibility: hidden;
     border-radius: 20px;
+    width: 550px;
+    height: 300px;
 }
 
 .tentang .row .middle {
@@ -199,7 +211,7 @@ h1, h2 {
 }
 
 .tentang .row img:hover {
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 .tentang .row .middle:hover {
@@ -207,15 +219,11 @@ h1, h2 {
 }
 
 .tentang .row .middle .lengkap {
-    background-color: #19A7CE;
+    background-color: #878787;
     color: white;
     font-size: 16px;
     padding: 16px 32px;
-}
-
-.tentang .image-box img {
-    width: 550px;
-    height: 300px;
+    text-decoration: none;
 }
 
 .tentang .row .image-box {
@@ -230,10 +238,6 @@ h1, h2 {
     overflow: hidden;
 }
 
-.sewa .card-sewa .tm-section-header .tm-section-title {
-    font-weight: 100px;
-}
-
 .sewa .card-sewa .card-box .card {
     border-radius: 30px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -246,11 +250,6 @@ h1, h2 {
     border-radius: 30px;
 }
 
-/* .sewa .card-sewa .card-box .card-body .card-icon {
-    display: flex;
-    justify-content: space-between;
-} */
-
 .sewa .card-sewa .card-box .card-body .btn {
     background-color: #000000;
     border: none;
@@ -259,6 +258,9 @@ h1, h2 {
 .sewa .card-sewa .card-box img {
     border-radius: 20px;
 }
+
+/* Quote */
+
 
 /* Swiper  */
 .swiper {
@@ -286,7 +288,6 @@ h1, h2 {
 .swiper .swiper-slide .swiper-image img {
     border-radius: 20px;
     width: 550px;
-    /* padding: 30px; */
 }
 
 .swiper .swiper-slide .card-title {
@@ -361,7 +362,7 @@ h1, h2 {
 .tm-banner-title,
 .tm-banner-subtitle,
 .tm-banner-link {
-    text-transform: uppercase;
+    text-transform: capitalize;
     text-decoration: none;
 }
 
@@ -503,78 +504,4 @@ h1, h2 {
 
 .tm-teks .tm-section-heade .row {
     display: inline;
-}
-
-@media (min-width:768px) and (max-width:1023px) {
-    .swiper .swiper-slide h1 {
-        font-weight: 400px;
-        color: rgb(255, 125, 125);
-    }
-
-    .swiper .swiper-slide .swiper-image {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .swiper-button-next {
-        margin-right: 100px;
-    }
-
-    .swiper-button-prev {
-        margin-left: 100px;
-    }
-
-    .swiper .swiper-pagination {
-        margin-top: 20px;
-    }
-
-    /* .tentang {
-        display: inline-block;
-        align-items: center;
-    } */
-
-    .tentang .row {
-        display: block;
-        text-align: center;
-    }
-}
-
-@media (max-width:767px) {
-    .swiper .swiper-slide h1 {
-        font-weight: 400px;
-        color: rgb(255, 0, 0);
-    }
-
-    /* Hero Section  */
-    .landing-page .content .text-cont .header {
-        font-size: 2.5rem;
-        font-weight: 500;
-        /* line-height: 1.1; */
-        color: #FFF;
-        font-family: "Kanit", sans-serif;
-    }
-
-    .landing-page .content .text-cont .description {
-        font-size: 0.9rem;
-        font-family: "Roboto Condensed", sans-serif;
-    }
-
-
-    /* Tentang  */
-
-    .tentang .image-box img {
-        width: 250px;
-        height: 150px;
-    }
-
-    /* Daftar Sewa  */
-
-    /* Quote  */
-
-    /* Footer  */
-    .footer .footer-box iframe {
-        width: 250px;
-        height: 150px;
-    }
 }
