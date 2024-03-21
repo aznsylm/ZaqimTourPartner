@@ -9,9 +9,9 @@
     <link rel="shortcut icon" href="img/Sedan.png" type="image/x-icon">
 
     <!-- css  -->
-    <link rel="stylesheet" href="fontawesome/css/style.css">
-    <link rel="stylesheet" href="fontawesome/css/footer.css">
-    <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -62,7 +62,7 @@
                             Daftar Sewa
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="index.html">Mobil</a></li>
+                            <li><a class="dropdown-item" href="index.html">Kendaraan</a></li>
                             <li><a class="dropdown-item" href="index.html">Review</a></li>
                             <li>
                                 <hr class="dropdown-divider">
@@ -98,38 +98,95 @@
         </div>
     </section>
 
-    <div class="container mt-5 mb-5">
-        <div class="row">
-            <!-- Pemisah  -->
-            <div class="container">
-                <div class="row tm-section-header">
-                    <div class="col-lg-3 col-md-3 col-sm-3">
-                        <hr>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 text-center">
-                        <h2 class="tm-section-title">ZaqimTourPartner Pelayanan Terbaik</h2>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3">
-                        <hr>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-12">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252997.5352466622!2d110.00935249453123!3d-7.780654299999984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7af7fb5c5321ad%3A0x4782e467f6863fa0!2sTravelNow%20Tour%20Partner%20jogja!5e0!3m2!1sid!2sid!4v1710736816917!5m2!1sid!2sid"
-                    width="550" height="250" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="col-lg-6 col-md-6 col-12">
+    <section class="tm-box">
+        <div class="container ">
+            <div class="row">
+                <!-- Pemisah  -->
                 <div class="container">
-                    <h2>Kotak Saran/ Informasi</h2>
-                    <p>Berikan masukkan anda agar memberikan evaluasi baik kepada kami</p>
+                    <div class="row tm-section-header">
+                        <div class="col-lg-3 col-md-3 col-sm-3">
+                            <hr>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 text-center">
+                            <h2 class="tm-section-title">ZaqimTourPartner Pelayanan Terbaik</h2>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3">
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12 d-flex justify-content-center align-items-center">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252997.5352466622!2d110.00935249453123!3d-7.780654299999984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7af7fb5c5321ad%3A0x4782e467f6863fa0!2sTravelNow%20Tour%20Partner%20jogja!5e0!3m2!1sid!2sid!4v1710736816917!5m2!1sid!2sid"
+                        width="600" height="350" style="border:1px solid; border-radius: 10px;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <h2>Kotak Pemesanan/ Booking</h2>
+                    <p>Pesan dengan mudah melalui formulir pemesanan, pastikan setiap informasi yang diberikan adalah
+                        benar
+                    </p>
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <label for="inputNama" class="form-label">Nama</label>
+                            <input type="nama" class="form-control" id="inputNama">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputNomor" class="form-label">Nomor Hp</label>
+                            <input type="nomor" class="form-control" id="inputNomor">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputJemput" class="form-label">Titik jemput</label>
+                            <input type="text" class="form-control" id="inputJemput"
+                                placeholder="Paste Link Google Maps Lokasi Anda ">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAntar" class="form-label">Titik Tujuan</label>
+                            <input type="text" class="form-control" id="inputAntar"
+                                placeholder="Paste Link Tujuan/ Destinasi Anda ">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="TanggalSewa" class="form-label">Tanggal Sewa</label>
+                            <input type="date" class="form-control" id="TanggalSewa">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="TanggalKembali" class="form-label">Tanggal Kembali</label>
+                            <input type="date" class="form-control" id="TanggalKembali">
+                        </div>
+                        <div class="col-6">
+                            <label for="inputState" class="form-label">Kendaraan/ Unit</label>
+                            <select id="inputState" class="form-select">
+                                <option selected hidden>Pilih</option>
+                                <option>Toyota Hiace Commuter</option>
+                                <option>Hiace Premio</option>
+                                <option>Big Bus</option>
+                                <option>Medium Bus</option>
+                                <option>Toyota Alphard</option>
+                                <option>Fortuner</option>
+                                <option>Xpander</option>
+                                <option>Innova Reborn</option>
+                                <option>Avanza FWD</option>
+                                <option>Avanza</option>
+                                <option>Honda Brio</option>
+                                <option>Innova Zenix</option>
+                            </select>
+                        </div>
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label for="formFileMultiple" class="form-label">Unduh Persyaratan</label>
+                                <input class="form-control" type="file" id="formFileMultiple" multiple>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Kirim</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Footer  -->
     <footer class="foot">
@@ -151,7 +208,7 @@
             </div>
             <div class="bottom-footer">
                 <p id="customer">Keamanan dan Kenyamanan Anda adalah Prioritas Bagi Kami, Salam hangat</p><br>
-                <p>Copyrights &copy <span id="copyrightYear">2023</span> ZaqimTourPartner | Designed by <a
+                <p>Copyrights &copy <span id="copyrightYear">2024</span> ZaqimTourPartner | Designed by <a
                         href="https://www.linkedin.com/in/aizan-syalim-080a44276" style="text-decoration: none;">Aizan
                         Syalim</a>
                 </p>
