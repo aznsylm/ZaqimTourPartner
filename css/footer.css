@@ -4,6 +4,7 @@
   justify-content: center;
   min-height: 2rem;
   font-family: "Kanit", sans-serif;
+  padding-top: 2rem;
 }
 
 .bottom-footer {
@@ -202,12 +203,5 @@ footer .follow a {
     align-items: center;
     justify-content: center;
     gap: 15%;
-  }
-}
-
-@media (max-width: 420px) {
-  footer .logo_bot img {
-    /* width: 12rem; */
-    height: auto;
   }
 }

@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* overflow-x: hidden; */
 }
 
 p {
@@ -106,10 +107,6 @@ p {
     letter-spacing: 0.7px;
 }
 
-.navbar .container {
-    padding: 10px 0;
-}
-
 .navbar .navbar-brand {
     color: #ffffff;
     font-family: "Kanit", sans-serif;
@@ -132,55 +129,8 @@ p {
 
 }
 
-/* Hero Section */
-.landing-page {
-    user-select: none;
-    background: url("../img/YIA.jpg");
-    background-size: cover;
-    background-position: center 40%;
-    opacity: 90%;
-}
+/* Banner */
 
-.landing-page .container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.landing-page .content {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-}
-
-.landing-page .content .text-cont {
-    width: 80%;
-}
-
-.landing-page .content .text-cont .header {
-    font-size: 4.5rem;
-    font-weight: 700;
-    line-height: 1.1;
-    letter-spacing: 1px;
-    text-transform: capitalize;
-    color: #FFF;
-    /* font-family: "Kanit", sans-serif; */
-}
-
-.landing-page .content .text-cont .header span {
-    color: #fcdd44;
-}
-
-.landing-page .content .text-cont .description {
-    font-family: "Kanit", sans-serif;
-    font-weight: 350;
-    font-style: normal;
-    font-size: 20px;
-    text-transform: capitalize;
-    color: #ffff;
-    width: 80%;
-}
 
 /* TENTANG KAMI */
 .tentang .title-box p {
@@ -227,9 +177,12 @@ p {
 }
 
 .tentang .row .image-box {
+
+    width: 100%;
     position: relative;
+    /* position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: center; */
 }
 
 /* Daftar Sewa */
@@ -350,93 +303,32 @@ p {
 
 /* HALAMAN TENTANG KAMI */
 /* ################################################# */
-.tm-banner-inner {
-    height: auto;
-    margin: auto;
-    position: absolute;
-    left: 0px;
-    bottom: 300px;
-    right: 0px;
+.banner {
+    background-size: cover;
+    background-position: center;
 }
 
-.tm-banner-title,
-.tm-banner-subtitle,
-.tm-banner-link {
-    text-transform: capitalize;
-    text-decoration: none;
+.bg-banner-home {
+    background-image: url("../img/img-mobil/banner-1.jpg");
 }
 
-.tm-banner-title,
-.tm-banner-subtitle {
-    color: white;
+.bg-banner-about {
+    background-image: url("../img/img-mobil/banner-3.jpg");
 }
 
-.tm-banner-title {
-    font-size: 74px;
-    font-weight: 600;
+.bg-banner-contact {
+    background-image: url("../img/img-mobil/banner-2.jpg");
 }
 
-.tm-banner-subtitle {
-    font-size: 34px;
-}
 
-.tm-yellow-text {
-    color: #fcdd44;
-}
-
-.tm-banner-link {
-    background: rgba(0, 0, 0, 0.50) none repeat scroll 0% 0%;
-    border: 1px solid #d2b731;
-    color: #fff;
-    font-weight: 600;
-    display: inline-block;
-    padding: 15px 40px;
-    margin-top: 30px;
-    transition: all 0.3s ease;
-    border-radius: 30px;
-}
-
-.tm-banner-link:hover,
-.tm-banner-link:focus {
-    background: rgba(252, 221, 68, 1);
-    color: #000;
-}
-
-.flexslider.flexslider-banner {
-    max-width: 100%;
-    height: 100%;
-    z-index: 0;
-}
-
-.flexslider.flexslider-banner .slides>li {
-    text-align: center;
-}
-
-.flexslider.flexslider-banner .flex-direction-nav a:before {
-    color: #fcdd44;
-}
-
-.flex-direction-nav a {
-    height: 50px;
-}
-
-.flexslider {
-    margin: 0;
-    padding: 0;
-}
-
-.flexslider .slides img {
+.transparent-bg {
+    background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.6));
     width: 100%;
-    display: block;
+    padding: 200px 0;
 }
 
-.flexslider .slides:after {
-    content: "\0020";
-    display: block;
-    clear: both;
-    visibility: hidden;
-    line-height: 0;
-    height: 0;
+.text-banner h1 {
+    font-size: 68px;
 }
 
 .tm-box .carousel-item img {
@@ -520,56 +412,9 @@ p {
         font-size: 1.8rem;
     }
 
-    .landing-page {
-        user-select: none;
-        background-size: cover;
-        background-position: center 40%;
-        opacity: 90%;
+    .banner p {
+        font-size: 2.5rem;
     }
-
-    .landing-page .container {
-        max-width: 1100px;
-        margin: 0 auto;
-        padding-left: 15px;
-        padding-right: 15px;
-
-    }
-
-    .landing-page .content {
-        min-height: 100vh;
-        display: flex;
-    }
-
-    .landing-page .content .text-cont {
-        width: 100%;
-        margin-top: -100px;
-        text-align: center;
-    }
-
-    .landing-page .content .text-cont .header {
-        font-size: 6rem;
-        font-weight: 700;
-        line-height: 1.1;
-        letter-spacing: 1px;
-        text-transform: capitalize;
-        color: #FFF;
-    }
-
-    .landing-page .content .text-cont .header span {
-        color: #fcdd44;
-    }
-
-    .landing-page .content .text-cont .description {
-        font-family: "Kanit", sans-serif;
-        font-weight: 350;
-        font-style: normal;
-        font-size: 20px;
-        text-transform: capitalize;
-        color: #ffff;
-        width: 80%;
-        margin-left: 70px;
-    }
-
 
     .tentang .title-box p {
         width: 100%;
@@ -645,11 +490,6 @@ p {
         font-size: 2rem;
     }
 
-    .sewa .card-sewa img {
-        width: 230px;
-        height: auto;
-    }
-
     .sewa .card-sewa h5 {
         font-size: 2rem;
     }
@@ -666,6 +506,10 @@ p {
         font-size: 1.5rem;
     }
 
+    .sewa .tm-section-header h2 {
+        font-size: 2.6rem;
+    }
+
     .quote h2, .sewa .syarat-title {
         font-size: 3.5rem;
     }
@@ -676,7 +520,7 @@ p {
     }
 
     .swiper .swiper-slide img {
-        width: 400px !important;
+        width: 100% !important;
         height: 200px !important;
     }
 
@@ -704,13 +548,136 @@ p {
         margin: auto;
         position: absolute;
         left: 0px;
-        bottom: 500px;
+        bottom: 500 px;
         right: 0px;
+    }
+
+    /* About  */
+    .banner .btn {
+        font-size: 2rem;
+    }
+
+    .tm-box .tm-section-header h2 {
+        font-size: 3rem;
+    }
+
+    .tm-box .carousel-item h1 {
+        margin-top: 1.5em;
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    .tm-box .carousel-item p {
+        font-size: 2rem;
+        text-align: justify;
+        margin-top: 1rem;
+    }
+
+    /* Contact  */
+    .tm-box {
+        margin: 20px 0;
+    }
+
+    .tm-box .text-header {
+        margin-bottom: 20px;
+    }
+
+    .tm-box .text-header h2 {
+        font-size: 3rem;
+    }
+
+    .tm-box .text-header p {
+        font-size: 1.5rem;
     }
 }
 
 @media (max-width: 766px) {
     .navbar .navbar-brand {
         font-size: 2rem;
+    }
+
+    .banner h1 {
+        font-size: 4rem;
+    }
+
+    .banner p {
+        font-size: 1.5rem;
+    }
+
+    .tentang h2 {
+        font-size: 3rem;
+    }
+
+    .tentang p {
+        margin: 2rem 0;
+        font-size: 1.5rem;
+    }
+
+    .tentang .row .image-box {
+        width: 250px;
+    }
+
+    .sewa .card-sewa .card {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    .swiper .swiper-slide img {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+
+    .swiper .swiper-slide .card-title {
+        margin-top: 100px;
+
+    }
+
+    .swiper .swiper-slide .card-title h2 {
+        font-size: 3rem;
+    }
+
+    .swiper .swiper-slide .card-title p {
+        font-size: 1.5rem;
+        font-family: "Open Sans", sans-serif;
+    }
+
+
+    /* About  */
+    .banner .btn {
+        font-size: 2rem;
+    }
+
+    .tm-box .tm-section-header h2 {
+        font-size: 3rem;
+    }
+
+    .tm-box .carousel-item h1 {
+        margin-top: 1.5em;
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    .tm-box .carousel-item p {
+        font-size: 2rem;
+        text-align: justify;
+        margin-top: 1rem;
+    }
+
+    /* Contact  */
+    .tm-box {
+        margin: 20px 0;
+    }
+
+    .tm-box .text-header {
+        margin-bottom: 20px;
+    }
+
+    .tm-box .text-header h2 {
+        font-size: 3rem;
+    }
+
+    .tm-box .text-header p {
+        font-size: 1.5rem;
     }
 }

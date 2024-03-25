@@ -33,11 +33,12 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <script src="https://kit.fontawesome.com/b20fec971f.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body class="gray-bg">
     <!-- Navbar Start  -->
-    <nav class="navbar navbar-expand-md ">
+    <nav class="navbar navbar-expand-md navbar-dark py-4 px-5">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <i class="bi bi-car-front "></i> ZaqimTourPartner
@@ -78,24 +79,19 @@
     </nav>
     <!-- Navbar End  -->
 
-    <!-- Banner -->
-    <section class="tm-banner">
-        <!-- Flexslider -->
-        <div class="flexslider flexslider-banner">
-            <ul class="slides">
-                <li>
-                    <div class="tm-banner-inner">
-                        <h1 class="tm-banner-title"><span class="tm-yellow-text">Zaqim</span> Tour Partner</h1>
-                        <p class="tm-banner-subtitle">Bahagiakan Setiap Perjalanan</p>
-
-                        <a href="index.html" class="tm-banner-link">Beranda</a>
-
-                    </div>
-                    <img src="img/img-mobil/banner-3.jpg" />
-                </li>
-            </ul>
+    <!-- Banner Start -->
+    <div class="banner bg-banner-about ">
+        <div class="transparent-bg text-light">
+            <div class="container">
+                <div class="text-center text-banner" style="top: 50%">
+                    <h1><span class="text-warning">Zaqim </span>Tour Partner</h1>
+                    <h2>Bahagiakan Setiap Perjalanan</h2>
+                    <a href="index.html" class="btn btn-outline-warning p-3 px-5 mt-5">Beranda</a>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
+    <!-- Banner End-->
 
     <!-- About  -->
     <section class="tm-box ">
@@ -122,10 +118,11 @@
                         <div>
                             <div class="carousel-inner bg-light p-2">
 
-                                <div class="carousel-item ">
+                                <div class="carousel-item artikel-1">
                                     <div class="row ">
                                         <div class="col-lg-6 col-md-12 col-12">
-                                            <img src="img/img-mobil/2Hiace.png" class="d-block w-100" alt="...">
+                                            <img src="img/img-mobil/2Hiace.png" class="d-block w-100 " alt="..."
+                                                style="object-fit: cover;">
                                         </div>
                                         <div class="col-lg-6 col-md-12 col-12">
                                             <h1>ZaqimTourPartner</h1>
@@ -159,8 +156,15 @@
                                     </div>
                                 </div>
 
-                                <div class="carousel-item ">
-                                    <div class="row">
+                                <div class="carousel-item artikel-2">
+                                    <div class="row flex-row-reverse">
+                                        <div class="col-lg-6 col-md-12 col-12">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252997.5352466622!2d110.00935249453123!3d-7.780654299999984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7af7fb5c5321ad%3A0x4782e467f6863fa0!2sTravelNow%20Tour%20Partner%20jogja!5e0!3m2!1sid!2sid!4v1710736816917!5m2!1sid!2sid"
+                                                width="100%" height="250" style="border:0; border-radius: 10px;"
+                                                allowfullscreen="" loading="lazy"
+                                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
                                         <div class="col-lg-6 col-md-12 col-12">
                                             <h1>Lokasi</h1>
                                             <p>Dengan pusat operasi yang terletak di Jl. Kramat No. 18 Sidoarum, Godean,
@@ -182,13 +186,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-lg-6 col-md-12 col-12">
-                                            <iframe
-                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252997.5352466622!2d110.00935249453123!3d-7.780654299999984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7af7fb5c5321ad%3A0x4782e467f6863fa0!2sTravelNow%20Tour%20Partner%20jogja!5e0!3m2!1sid!2sid!4v1710736816917!5m2!1sid!2sid"
-                                                width="550" height="250" style="border:0; border-radius: 10px;"
-                                                allowfullscreen="" loading="lazy"
-                                                referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                        </div>
+
 
                                     </div>
                                 </div>
@@ -202,10 +200,11 @@
                                     </div>
                                 </div>
 
-                                <div class="carousel-item ">
+                                <div class="carousel-item artikel-3">
                                     <div class="row">
                                         <div class="col-lg-6 col-md-12 col-12">
-                                            <img src="img/img-mobil/About.jpeg" class="d-block w-100" alt="...">
+                                            <img src="img/img-mobil/About.jpeg" class="d-block w-100" alt="..."
+                                                style="object-fit: cover;">
                                         </div>
                                         <div class="col-lg-6 col-md-12 col-12">
                                             <h1>Layanan</h1>

@@ -33,11 +33,18 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <script src="https://kit.fontawesome.com/b20fec971f.js" crossorigin="anonymous"></script>
+
+    <style>
+        img.card-img-top {
+            height: 150px;
+            object-fit: cover;
+        }
+    </style>
 </head>
 
 <body class="gray-bg">
     <!-- Navbar Start  -->
-    <nav class="navbar navbar-expand-md ">
+    <nav class="navbar navbar-expand-md navbar-dark py-4 px-5">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <i class="bi bi-car-front "></i> ZaqimTourPartner
@@ -78,24 +85,21 @@
     </nav>
     <!-- Navbar End  -->
 
-    <!-- Hero Section  -->
-    <section class="landing-page">
-        <div class="container">
-            <div class="content">
-                <div class="text-cont">
-                    <h1 class="header">
-                        Jelajahi <span class="first-clr">Destinasi, </span> Nikmati <span
-                            class="first-clr">Kenangan</span>
-                        Bersama Kami<span class="first-clr"></span>
-                    </h1>
-                    <h2 class="description">
-                        Nikmati setiap momen petualangan Anda dengan kepercayaan penuh pada layanan berkualitas dari
-                        ZaqimTourTravel.
-                    </h2>
+    <!-- Banner Start -->
+    <div class="banner bg-banner-home ">
+        <div class="transparent-bg text-light">
+            <div class="container">
+                <div class="text-center text-banner" style="top: 50%">
+                    <h1>Jelajahi <span class="text-warning">Destinasi, </span>Nikmati Kenangan Bersama Kami</h1>
+                    <!-- <h2>Bahagiakan Setiap Perjalanan</h2> -->
+                    <p class="mt-5">Nikmati Setiap Momen Perjalanan Anda Dengan Kepercayaan Penuh Pada Layanan
+                        Berkualitas Dari
+                        ZaqimTourPartner</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    <!-- Banner End-->
 
     <!-- Tentang Kami  -->
     <section class="tentang p-5 mt-5">
@@ -153,82 +157,99 @@
             <div class="container card-sewa text-center ">
 
                 <!-- Baris 1  -->
-                <div class="row align-items-center baris-1 bg-primary">
-                    <div class="card-box col-lg-3 col-md-6 col-12 hvr-grow">
-                        <div class="card mx-auto bg-light " data-aos="zoom-in" data-aos-duration="2000">
-                            <div class="card-body">
-                                <img src="img/img-mobil/HiaceCommuter.jpg" class="card-img-top" alt="...">
-                                <h5 class="card-title mb-3 pt-2">Toyota Hiace Commuter</h5>
-                                <p class="card-text">
-                                    Toyota Hiace Commuter adalah van luas dan handal, fitur
-                                    keselamatan canggih, serta kapasitas penumpang dan ruang kargo yang besar.</p>
-                                <div class="card-icon mb-2">
-                                    <i class="bi bi-person-check-fill"></i>Driver
-                                    <i class="bi bi-fuel-pump-fill"></i>BBM
-                                    <i class="bi bi-car-front-fill"></i>Toyota
+                <div class="row mt-5 ">
+
+                    <div class="col-lg-3 col-md-6 mb-5">
+                        <div class="card h-100 rounded-4">
+                            <img src="img/img-mobil/HiaceCommuter.jpg" alt="" class="card-img-top rounded-top-4">
+                            <div class="card-body row">
+                                <div class="col-12 align-self-start">
+                                    <h5 class="card-title mb-3 pt-2">Toyota Hiace Commuter</h5>
+                                    <p class="card-text">
+                                        Toyota Hiace Commuter adalah van luas dan handal, fitur
+                                        keselamatan canggih, serta kapasitas penumpang dan ruang kargo yang besar.</p>
                                 </div>
-                                <!-- <div class="card-icon mb-2">
-                                    <i class="bi bi-cash"></i>Rp. 1.500.000
-                                </div> -->
-                                <a href="https://api.whatsapp.com/send?phone=6282332340653"
-                                    class="btn btn-primary">Whatsapp</a>
+                                <div class="col-12 align-self-end">
+                                    <div class="card-icon mb-2">
+                                        <i class="bi bi-person-check-fill"></i> Driver
+                                        <i class="bi bi-fuel-pump-fill"></i> BBM
+                                        <i class="bi bi-car-front-fill"></i> Toyota
+                                    </div>
+                                    <a href="https://api.whatsapp.com/send?phone=6282332340653"
+                                        class="btn btn-primary mt-3">Whatsapp</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card-box col-lg-3 col-md-6 col-12 hvr-grow">
-                        <div class="card mx-auto bg-light" data-aos="zoom-in" data-aos-duration="2000">
-                            <div class="card-body">
-                                <img src="img/img-mobil/HiacePremio.jpg" class="card-img-top" alt="...">
-                                <h5 class="card-title mb-3 pt-2">Hiace Premio</h5>
-                                <p class="card-text">Toyota Hiace Premio adalah varian mewah dengan desain elegan, fitur
-                                    premium, dan performa handal, cocok untuk perjalanan bisnis atau keluarga dalam
-                                    usaha sewa mobil.</p>
-                                <div class="card-icon mb-2">
-                                    <i class="bi bi-person-check-fill"></i> Driver
-                                    <i class="bi bi-fuel-pump-fill"></i> BBM
-                                    <i class="bi bi-stopwatch-fill"></i> 8 Seat
+                    <div class="col-lg-3 col-md-6 mb-5">
+                        <div class="card h-100 rounded-4">
+                            <img src="img/img-mobil/HiacePremio.jpg" alt="" class="card-img-top rounded-top-4">
+                            <div class="card-body row">
+                                <div class="col-12 align-self-start">
+                                    <h5 class="card-title mb-3 pt-2">Hiace Premio</h5>
+                                    <p class="card-text">Toyota Hiace Premio adalah varian mewah dengan desain elegan,
+                                        fitur
+                                        premium, dan performa handal, cocok untuk perjalanan bisnis atau keluarga dalam
+                                        usaha sewa mobil.</p>
                                 </div>
-                                <a href="https://api.whatsapp.com/send?phone=6282332340653"
-                                    class="btn btn-primary">Whatsapp</a>
+                                <div class="col-12 align-self-end">
+                                    <div class="card-icon mb-2">
+                                        <i class="bi bi-person-check-fill"></i> Driver
+                                        <i class="bi bi-fuel-pump-fill"></i> BBM
+                                        <i class="bi bi-car-front-fill"></i> Toyota
+                                    </div>
+                                    <a href="https://api.whatsapp.com/send?phone=6282332340653"
+                                        class="btn btn-primary mt-3">Whatsapp</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card-box col-lg-3 col-md-6 col-12 hvr-grow">
-                        <div class="card mx-auto bg-light" data-aos="zoom-in" data-aos-duration="2000">
-                            <div class="card-body">
-                                <img src="img/img-mobil/BigBus.jpg" class="card-img-top" alt="...">
-                                <h5 class="card-title mb-3 pt-2">Big Bus</h5>
-                                <p class="card-text">
-                                    Big Bus adalah bus besar dengan ruang yang luas, nyaman, dan fitur keselamatan
-                                    lengkap, cocok untuk perjalanan wisata kelompok atau acara khusus.</p>
-                                <div class="card-icon mb-2">
-                                    <i class="bi bi-person-check-fill"></i> Driver
-                                    <i class="bi bi-fuel-pump-fill"></i> BBM
-                                    <i class="bi bi-stopwatch-fill"></i> 8 Seat
+                    <div class="col-lg-3 col-md-6 mb-5">
+                        <div class="card h-100 rounded-4">
+                            <img src="img/img-mobil/BigBus.jpg" alt="" class="card-img-top rounded-top-4">
+                            <div class="card-body row">
+                                <div class="col-12 align-self-start">
+                                    <h5 class="card-title mb-3 pt-2">Big Bus</h5>
+                                    <p class="card-text">
+                                        Big Bus adalah bus besar dengan ruang yang luas, nyaman, dan fitur keselamatan
+                                        lengkap, cocok untuk perjalanan wisata kelompok atau acara khusus.</p>
                                 </div>
-                                <a href="https://api.whatsapp.com/send?phone=6282332340653"
-                                    class="btn btn-primary">Whatsapp</a>
+                                <div class="col-12 align-self-end">
+                                    <div class="card-icon mb-2">
+                                        <i class="bi bi-person-check-fill"></i> Driver
+                                        <i class="bi bi-fuel-pump-fill"></i> BBM
+                                        <i class="bi bi-car-front-fill"></i> Toyota
+                                    </div>
+                                    <a href="https://api.whatsapp.com/send?phone=6282332340653"
+                                        class="btn btn-primary mt-3">Whatsapp</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card-box col-lg-3 col-md-6 col-12 hvr-grow">
-                        <div class="card mx-auto bg-light" data-aos="zoom-in" data-aos-duration="2000">
-                            <div class="card-body">
-                                <img src="img/img-mobil/MediumBus.jpg" class="card-img-top" alt="...">
-                                <h5 class="card-title mb-3 pt-2">Medium Bus</h5>
-                                <p class="card-text">
-                                    Big Bus adalah bus besar dengan ruang yang luas, nyaman, dan fitur keselamatan
-                                    lengkap, cocok untuk perjalanan wisata kelompok atau acara khusus.</p>
-                                <div class="card-icon mb-2">
-                                    <i class="bi bi-person-check-fill"></i> Driver
-                                    <i class="bi bi-fuel-pump-fill"></i> BBM
-                                    <i class="bi bi-stopwatch-fill"></i> 8 Seat
+                    <div class="col-lg-3 col-md-6 mb-5">
+                        <div class="card h-100 rounded-4">
+                            <img src="img/img-mobil/Alpard.jpg" alt="" class="card-img-top rounded-top-4">
+                            <div class="card-body row">
+                                <div class="col-12 align-self-start ">
+                                    <h5 class="card-title mb-3 pt-2">Medium Bus</h5>
+                                    <p class="card-text">
+                                        Medium Bus adalah bus medium dengan ruang yang luas, nyaman, dan fitur
+                                        keselamatan
+                                        lengkap, cocok untuk perjalanan wisata kelompok atau acara khusus.</p>
                                 </div>
-                                <a href="https://api.whatsapp.com/send?phone=6282332340653"
-                                    class="btn btn-primary">Whatsapp</a>
+                                <div class="col-12 align-self-end">
+                                    <div class="card-icon mb-2">
+                                        <i class="bi bi-person-check-fill"></i> Driver
+                                        <i class="bi bi-fuel-pump-fill"></i> BBM
+                                        <i class="bi bi-car-front-fill"></i> Toyota
+                                    </div>
+                                    <a href="https://api.whatsapp.com/send?phone=6282332340653"
+                                        class="btn btn-primary mt-3">Whatsapp</a>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
 
                 <!-- Pemisah  -->
@@ -247,162 +268,206 @@
                 </div>
 
                 <!-- Baris 2  -->
-                <div class="row text-center ">
-                    <div class="card-box col-lg-3 col-md-6 hvr-grow">
-                        <div class="card mx-auto bg-light" data-aos="zoom-in" data-aos-duration="2000">
-                            <div class="card-body">
-                                <img src="img/img-mobil/Alpard.jpg" class="card-img-top" alt="...">
-                                <h5 class="card-title mb-3 pt-2 ">Toyota Alphard</h5>
-                                <p class="card-text">
-                                    Toyota Alphard adalah MPV mewah dengan desain elegan, interior nyaman, dan fitur
-                                    canggih, ideal untuk perjalanan keluarga atau bisnis yang mengutamakan kenyamanan
-                                    dan gaya.</p>
-                                <div class="card-icon mb-2">
-                                    <i class="bi bi-person-check-fill"></i> Driver
-                                    <i class="bi bi-fuel-pump-fill"></i> BBM
-                                    <i class="bi bi-stopwatch-fill"></i> 8 Seat
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 mb-5">
+                        <div class="card h-100 rounded-4">
+                            <img src="img/img-mobil/Alpard.jpg" alt="" class="card-img-top rounded-top-4">
+                            <div class="card-body row">
+                                <div class="col-12 align-self-start">
+                                    <h5 class="card-title mb-3 pt-2 ">Toyota Alphard</h5>
+                                    <p class="card-text">
+                                        Toyota Alphard adalah MPV mewah dengan desain elegan, interior nyaman, dan fitur
+                                        canggih, ideal untuk perjalanan keluarga atau bisnis yang mengutamakan
+                                        kenyamanan
+                                        dan gaya.</p>
                                 </div>
-                                <a href="https://api.whatsapp.com/send?phone=6282332340653"
-                                    class="btn btn-primary">Whatsapp</a>
+                                <div class="col-12 align-self-end">
+                                    <div class="card-icon mb-2">
+                                        <i class="bi bi-person-check-fill"></i> Driver
+                                        <i class="bi bi-fuel-pump-fill"></i> BBM
+                                        <i class="bi bi-car-front-fill"></i> Toyota
+                                    </div>
+                                    <a href="https://api.whatsapp.com/send?phone=6282332340653"
+                                        class="btn btn-primary mt-3">Whatsapp</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card-box col-lg-3 col-md-6 hvr-grow">
-                        <div class="card mx-auto bg-light" data-aos="zoom-in" data-aos-duration="2000">
-                            <div class="card-body">
-                                <img src="img/img-mobil/Fortuner.jpg" class="card-img-top" alt="...">
-                                <h5 class="card-title mb-3 pt-2">Fortuner</h5>
-                                <p class="card-text">
-                                    Toyota Fortuner adalah SUV tangguh dengan desain sporty, performa handal, interior
-                                    nyaman, dan fitur keselamatan modern, cocok untuk petualangan dan kebutuhan
-                                    sehari-hari.</p>
-                                <div class="card-icon mb-2">
-                                    <i class="bi bi-person-check-fill"></i> Driver
-                                    <i class="bi bi-fuel-pump-fill"></i> BBM
-                                    <i class="bi bi-stopwatch-fill"></i> 8 Seat
+                    <div class="col-lg-3 col-md-6 mb-5">
+                        <div class="card h-100 rounded-4">
+                            <img src="img/img-mobil/Fortuner.jpg" alt="" class="card-img-top rounded-top-4">
+                            <div class="card-body row">
+                                <div class="col-12 align-self-start">
+                                    <h5 class="card-title mb-3 pt-2">Fortuner</h5>
+                                    <p class="card-text">
+                                        Toyota Fortuner adalah SUV tangguh dengan desain sporty, performa handal,
+                                        interior
+                                        nyaman, dan fitur keselamatan modern, cocok untuk petualangan dan kebutuhan
+                                        sehari-hari.</p>
                                 </div>
-                                <a href="https://api.whatsapp.com/send?phone=6282332340653"
-                                    class="btn btn-primary">Whatsapp</a>
+                                <div class="col-12 align-self-end">
+                                    <div class="card-icon mb-2">
+                                        <i class="bi bi-person-check-fill"></i> Driver
+                                        <i class="bi bi-fuel-pump-fill"></i> BBM
+                                        <i class="bi bi-car-front-fill"></i> Toyota
+                                    </div>
+                                    <a href="https://api.whatsapp.com/send?phone=6282332340653"
+                                        class="btn btn-primary mt-3">Whatsapp</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card-box col-lg-3 col-md-6 hvr-grow">
-                        <div class="card mx-auto bg-light" data-aos="zoom-in" data-aos-duration="2000">
-                            <div class="card-body">
-                                <img src="img/img-mobil/Xpander.jpg" class="card-img-top" alt="...">
-                                <h5 class="card-title mb-3 pt-2">Xpander</h5>
-                                <p class="card-text">
-                                    Mitsubishi Xpander adalah MPV kompak dengan desain stylish, ruang interior
-                                    fleksibel, performa efisien, dan fitur keselamatan terkini, cocok untuk kebutuhan
-                                    keluarga atau bisnis mobil.</p>
-                                <div class="card-icon mb-2">
-                                    <i class="bi bi-person-check-fill"></i> Driver
-                                    <i class="bi bi-fuel-pump-fill"></i> BBM
-                                    <i class="bi bi-stopwatch-fill"></i> 8 Seat
+                    <div class="col-lg-3 col-md-6 mb-5">
+                        <div class="card h-100 rounded-4">
+                            <img src="img/img-mobil/Xpander.jpg" alt="" class="card-img-top rounded-top-4">
+                            <div class="card-body row">
+                                <div class="col-12 align-self-start">
+                                    <h5 class="card-title mb-3 pt-2">Xpander</h5>
+                                    <p class="card-text">
+                                        Mitsubishi Xpander adalah MPV kompak dengan desain stylish, ruang interior
+                                        fleksibel, performa efisien, dan fitur keselamatan terkini, cocok untuk
+                                        kebutuhan
+                                        keluarga atau bisnis mobil.</p>
                                 </div>
-                                <a href="https://api.whatsapp.com/send?phone=6282332340653"
-                                    class="btn btn-primary">Whatsapp</a>
+                                <div class="col-12 align-self-end">
+                                    <div class="card-icon mb-2">
+                                        <i class="bi bi-person-check-fill"></i> Driver
+                                        <i class="bi bi-fuel-pump-fill"></i> BBM
+                                        <i class="bi bi-car-front-fill"></i> Toyota
+                                    </div>
+                                    <a href="https://api.whatsapp.com/send?phone=6282332340653"
+                                        class="btn btn-primary mt-3">Whatsapp</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card-box col-lg-3 col-md-6 hvr-grow">
-                        <div class="card mx-auto bg-light" data-aos="zoom-in" data-aos-duration="2000">
-                            <div class="card-body">
-                                <img src="img/img-mobil/InnovaReborn.jpg" class="card-img-top" alt="...">
-                                <h5 class="card-title mb-3 pt-2">Innova Reborn</h5>
-                                <p class="card-text">
-                                    Toyota Innova Reborn adalah MPV dengan gaya modern, kenyamanan premium, teknologi
-                                    terkini, dan performa handal untuk perjalanan keluarga atau bisnis yang mengutamakan
-                                    keselamatan.</p>
-                                <div class="card-icon mb-2">
-                                    <i class="bi bi-person-check-fill"></i> Driver
-                                    <i class="bi bi-fuel-pump-fill"></i> BBM
-                                    <i class="bi bi-stopwatch-fill"></i> 8 Seat
+                    <div class="col-lg-3 col-md-6 mb-5">
+                        <div class="card h-100 rounded-4">
+                            <img src="img/img-mobil/InnovaReborn.jpg" alt="" class="card-img-top rounded-top-4">
+                            <div class="card-body row">
+                                <div class="col-12 align-self-start">
+                                    <h5 class="card-title mb-3 pt-2">Innova Reborn</h5>
+                                    <p class="card-text">
+                                        Toyota Innova Reborn adalah MPV dengan gaya modern, kenyamanan premium,
+                                        teknologi
+                                        terkini, dan performa handal untuk perjalanan keluarga atau bisnis yang
+                                        mengutamakan
+                                        keselamatan.</p>
                                 </div>
-                                <a href="https://api.whatsapp.com/send?phone=6282332340653"
-                                    class="btn btn-primary">Whatsapp</a>
+                                <div class="col-12 align-self-end">
+                                    <div class="card-icon mb-2">
+                                        <i class="bi bi-person-check-fill"></i> Driver
+                                        <i class="bi bi-fuel-pump-fill"></i> BBM
+                                        <i class="bi bi-car-front-fill"></i> Toyota
+                                    </div>
+                                    <a href="https://api.whatsapp.com/send?phone=6282332340653"
+                                        class="btn btn-primary mt-3">Whatsapp</a>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
 
                 <!-- Baris 3  -->
-                <div class="row text-center mt-5">
-                    <div class="card-box col-lg-3 col-md-6 hvr-grow">
-                        <div class="card mx-auto bg-light" data-aos="zoom-in" data-aos-duration="2000">
-                            <div class="card-body">
-                                <img src="img/img-mobil/AvanzaFWD.jpg" class="card-img-top" alt="...">
-                                <h5 class="card-title mb-3 pt-2 ">Avanza FWD</h5>
-                                <p class="card-text">
-                                    Toyota Avanza FWD adalah MPV kompak dengan desain stylish, efisiensi bahan bakar
-                                    baik, dan ruang interior nyaman, cocok untuk kebutuhan keluarga atau bisnis dalam
-                                    usaha sewa mobil.</p>
-                                <div class="card-icon mb-2">
-                                    <i class="bi bi-person-check-fill"></i> Driver
-                                    <i class="bi bi-fuel-pump-fill"></i> BBM
-                                    <i class="bi bi-stopwatch-fill"></i> 8 Seat
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 mb-5">
+                        <div class="card h-100 rounded-4 ">
+                            <img src="img/img-mobil/AvanzaFWD.jpg" alt="" class="card-img-top rounded-top-4">
+                            <div class="card-body row">
+                                <div class="col-12 align-self-start">
+                                    <h5 class="card-title mb-3 pt-2 ">Avanza FWD</h5>
+                                    <p class="card-text">
+                                        Toyota Avanza FWD adalah MPV kompak dengan desain stylish, efisiensi bahan bakar
+                                        baik, dan ruang interior nyaman, cocok untuk kebutuhan keluarga atau bisnis
+                                        dalam
+                                        usaha sewa mobil.</p>
                                 </div>
-                                <a href="https://api.whatsapp.com/send?phone=6282332340653"
-                                    class="btn btn-primary">Whatsapp</a>
+                                <div class="col-12 align-self-end">
+                                    <div class="card-icon mb-2">
+                                        <i class="bi bi-person-check-fill"></i> Driver
+                                        <i class="bi bi-fuel-pump-fill"></i> BBM
+                                        <i class="bi bi-car-front-fill"></i> Toyota
+                                    </div>
+                                    <a href="https://api.whatsapp.com/send?phone=6282332340653"
+                                        class="btn btn-primary mt-3">Whatsapp</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card-box col-lg-3 col-md-6 hvr-grow">
-                        <div class="card mx-auto bg-light" data-aos="zoom-in" data-aos-duration="2000">
-                            <div class="card-body">
-                                <img src="img/img-mobil/Avanza.jpg" class="card-img-top" alt="...">
-                                <h5 class="card-title mb-3 pt-2">Avanza</h5>
-                                <p class="card-text">
-                                    Toyota Avanza adalah MPV kompak dengan desain stylish, efisiensi bahan bakar baik,
-                                    dan ruang interior nyaman, cocok untuk kebutuhan keluarga atau bisnis dalam usaha
-                                    sewa mobil.</p>
-                                <div class="card-icon mb-2">
-                                    <i class="bi bi-person-check-fill"></i> Driver
-                                    <i class="bi bi-fuel-pump-fill"></i> BBM
-                                    <i class="bi bi-stopwatch-fill"></i> 8 Seat
+                    <div class="col-lg-3 col-md-6 mb-5">
+                        <div class="card h-100 rounded-4 ">
+                            <img src="img/img-mobil/Avanza.jpg" alt="" class="card-img-top rounded-top-4">
+                            <div class="card-body row">
+                                <div class="col-12 align-self-start">
+                                    <h5 class="card-title mb-3 pt-2">Avanza</h5>
+                                    <p class="card-text">
+                                        Toyota Avanza adalah MPV kompak dengan desain stylish, efisiensi bahan bakar
+                                        baik,
+                                        dan ruang interior nyaman, cocok untuk kebutuhan keluarga atau bisnis dalam
+                                        usaha
+                                        sewa mobil.</p>
                                 </div>
-                                <a href="https://api.whatsapp.com/send?phone=6282332340653"
-                                    class="btn btn-primary">Whatsapp</a>
+                                <div class="col-12 align-self-end">
+                                    <div class="card-icon mb-2">
+                                        <i class="bi bi-person-check-fill"></i> Driver
+                                        <i class="bi bi-fuel-pump-fill"></i> BBM
+                                        <i class="bi bi-car-front-fill"></i> Toyota
+                                    </div>
+                                    <a href="https://api.whatsapp.com/send?phone=6282332340653"
+                                        class="btn btn-primary mt-3">Whatsapp</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card-box col-lg-3 col-md-6 hvr-grow">
-                        <div class="card mx-auto bg-light" data-aos="zoom-in" data-aos-duration="2000">
-                            <div class="card-body">
-                                <img src="img/img-mobil/HondaBrio.jpg" class="card-img-top" alt="...">
-                                <h5 class="card-title mb-3 pt-2">Honda Brio</h5>
-                                <p class="card-text">
-                                    Honda Brio adalah hatchback kompak dengan desain modern, efisiensi bahan bakar
-                                    tinggi, dan ruang interior nyaman, cocok untuk penggunaan sehari-hari atau usaha
-                                    sewa mobil.</p>
-                                <div class="card-icon mb-2">
-                                    <i class="bi bi-person-check-fill"></i> Driver
-                                    <i class="bi bi-fuel-pump-fill"></i> BBM
-                                    <i class="bi bi-stopwatch-fill"></i> 8 Seat
+                    <div class="col-lg-3 col-md-6 mb-5">
+                        <div class="card h-100 rounded-4 ">
+                            <img src="img/img-mobil/HondaBrio.jpg" alt="" class="card-img-top rounded-top-4">
+                            <div class="card-body row">
+                                <div class="col-12 align-self-start">
+                                    <h5 class="card-title mb-3 pt-2">Honda Brio</h5>
+                                    <p class="card-text">
+                                        Honda Brio adalah hatchback kompak dengan desain modern, efisiensi bahan bakar
+                                        tinggi, dan ruang interior nyaman, cocok untuk penggunaan sehari-hari atau usaha
+                                        sewa mobil.</p>
                                 </div>
-                                <a href="https://api.whatsapp.com/send?phone=6282332340653"
-                                    class="btn btn-primary">Whatsapp</a>
+                                <div class="col-12 align-self-end">
+                                    <div class="card-icon mb-2">
+                                        <i class="bi bi-person-check-fill"></i> Driver
+                                        <i class="bi bi-fuel-pump-fill"></i> BBM
+                                        <i class="bi bi-car-front-fill"></i> Toyota
+                                    </div>
+                                    <a href="https://api.whatsapp.com/send?phone=6282332340653"
+                                        class="btn btn-primary mt-3">Whatsapp</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card-box col-lg-3 col-md-6 hvr-grow">
-                        <div class="card mx-auto bg-light" data-aos="zoom-in" data-aos-duration="2000">
-                            <div class="card-body">
-                                <img src="img/img-mobil/InnovaZenix.jpg" class="card-img-top" alt="...">
-                                <h5 class="card-title mb-3 pt-2">Innova Zenix</h5>
-                                <p class="card-text">Toyota Innova Zenix adalah MPV dengan gaya modern, kenyamanan
-                                    premium, teknologi terkini, dan performa handal untuk perjalanan keluarga atau
-                                    bisnis yang mengutamakan keselamatan.</p>
-                                <div class="card-icon mb-2">
-                                    <i class="bi bi-person-check-fill"></i> Driver
-                                    <i class="bi bi-fuel-pump-fill"></i> BBM
-                                    <i class="bi bi-stopwatch-fill"></i> 8 Seat
+                    <div class="col-lg-3 col-md-6 mb-5">
+                        <div class="card h-100 rounded-4 ">
+                            <img src="img/img-mobil/InnovaZenix.jpg" alt="" class="card-img-top rounded-top-4">
+                            <div class="card-body row">
+                                <div class="col-12 align-self-start">
+                                    <h5 class="card-title mb-3 pt-2">Innova Zenix</h5>
+                                    <p class="card-text">Toyota Innova Zenix adalah MPV dengan gaya modern, kenyamanan
+                                        premium, teknologi terkini, dan performa handal untuk perjalanan keluarga atau
+                                        bisnis yang mengutamakan keselamatan.</p>
                                 </div>
-                                <a href="https://api.whatsapp.com/send?phone=6282332340653"
-                                    class="btn btn-primary">Whatsapp</a>
+                                <div class="col-12 align-self-end">
+                                    <div class="card-icon mb-2">
+                                        <i class="bi bi-person-check-fill"></i> Driver
+                                        <i class="bi bi-fuel-pump-fill"></i> BBM
+                                        <i class="bi bi-car-front-fill"></i> Toyota
+                                    </div>
+                                    <a href="https://api.whatsapp.com/send?phone=6282332340653"
+                                        class="btn btn-primary mt-3">Whatsapp</a>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
 
                 <!-- Pemisah  -->
@@ -535,8 +600,38 @@
                     </div>
                 </div>
             </div>
-
             <div class="swiper-slide">
+                <div class="container text-center">
+                    <div class="row align-items-center ">
+                        <div class="swiper-image col-lg-6">
+                            <img src="img/img-mobil/Review1.jpeg" alt="">
+                            <div class="center">Zaqim Tour Partner</div>
+                        </div>
+                        <div class="col-lg-6 card-title">
+                            <h2>Beni Murnadi</h2>
+                            <p>Rekomended, amanah dan terpercaya. Crew ramah dan mobil nya bersih. Jalan-jalan kami
+                                kemarin ke jogja di handle dgn sangat baik sekali.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="container text-center">
+                    <div class="row align-items-center ">
+                        <div class="swiper-image col-lg-6">
+                            <img src="img/img-mobil/Review1.jpeg" alt="">
+                            <div class="center">Zaqim Tour Partner</div>
+                        </div>
+                        <div class="col-lg-6 card-title">
+                            <h2>Beni Murnadi</h2>
+                            <p>Rekomended, amanah dan terpercaya. Crew ramah dan mobil nya bersih. Jalan-jalan kami
+                                kemarin ke jogja di handle dgn sangat baik sekali.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="swiper-slide">
                 <div class="container text-center ">
                     <div class="row align-items-center ">
                         <div class="swiper-image col-lg-6">
@@ -576,7 +671,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
         </div>
         <div class="swiper-button-next"></div>
@@ -602,7 +697,7 @@
         </div>
 
         <div class="logo_bot">
-            <img src="img/Sedan.png">
+            <!-- <img src="img/Sedan.png"> -->
             <h3>Pilih ZaqimTourPartner Sebagai Tour Guide Anda</h3>
             <div class="newsletter">
                 <input type="text" name="newsletter" value="" placeholder="Masukkan Email Kamu">
