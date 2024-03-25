@@ -450,7 +450,7 @@ p {
 }
 
 .tm-box .carousel-inner .tm-section-header hr {
-    size: 2rem;
+    border: #000 solid 2px;
 }
 
 .slides,
@@ -697,5 +697,20 @@ p {
     .swiper .swiper-slide .card-title p {
         font-size: 2rem;
         font-family: "Open Sans", sans-serif;
+    }
+
+    .tm-banner-inner {
+        height: auto;
+        margin: auto;
+        position: absolute;
+        left: 0px;
+        bottom: 500px;
+        right: 0px;
+    }
+}
+
+@media (max-width: 766px) {
+    .navbar .navbar-brand {
+        font-size: 2rem;
     }
 }
