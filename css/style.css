@@ -176,13 +176,8 @@ p {
     text-decoration: none;
 }
 
-.tentang .row .image-box {
-
-    width: 100%;
-    position: relative;
-    /* position: relative;
-    display: flex;
-    justify-content: center; */
+.tentang .row .img {
+    width: 50%;
 }
 
 /* Daftar Sewa */
