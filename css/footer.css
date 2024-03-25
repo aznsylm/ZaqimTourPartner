@@ -134,7 +134,7 @@ footer .follow a {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   html {
     font-size: 45%;
   }

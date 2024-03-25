@@ -444,6 +444,15 @@ p {
     height: 250px;
 }
 
+
+.tm-box .tm-section-header {
+    margin: 0;
+}
+
+.tm-box .carousel-inner .tm-section-header hr {
+    size: 2rem;
+}
+
 .slides,
 .slides>li {
     margin: 0;
@@ -504,4 +513,189 @@ p {
 
 .tm-teks .tm-section-heade .row {
     display: inline;
+}
+
+@media (min-width: 767px) and (max-width: 1199px) {
+    .navbar a {
+        font-size: 1.8rem;
+    }
+
+    .landing-page {
+        user-select: none;
+        background-size: cover;
+        background-position: center 40%;
+        opacity: 90%;
+    }
+
+    .landing-page .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+
+    }
+
+    .landing-page .content {
+        min-height: 100vh;
+        display: flex;
+    }
+
+    .landing-page .content .text-cont {
+        width: 100%;
+        margin-top: -100px;
+        text-align: center;
+    }
+
+    .landing-page .content .text-cont .header {
+        font-size: 6rem;
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        color: #FFF;
+    }
+
+    .landing-page .content .text-cont .header span {
+        color: #fcdd44;
+    }
+
+    .landing-page .content .text-cont .description {
+        font-family: "Kanit", sans-serif;
+        font-weight: 350;
+        font-style: normal;
+        font-size: 20px;
+        text-transform: capitalize;
+        color: #ffff;
+        width: 80%;
+        margin-left: 70px;
+    }
+
+
+    .tentang .title-box p {
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 50px;
+    }
+
+    .tentang .title-box h2 {
+        width: 100%;
+        text-align: center;
+        font-size: 3.5rem;
+    }
+
+    .tentang .row img {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+        border-radius: 20px;
+        width: 500px;
+        height: 250px;
+    }
+
+    .tentang .row .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%)
+    }
+
+    .tentang .row img:hover {
+        opacity: 0.5;
+    }
+
+    .tentang .row .middle:hover {
+        opacity: 1;
+    }
+
+    .tentang .row .middle .lengkap {
+        background-color: #878787;
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px;
+        text-decoration: none;
+    }
+
+    .tentang .row .image-box {
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    .tentang .tm-section-header {
+        margin-top: 100px;
+    }
+
+    .sewa .heading {
+        margin-top: -30px;
+        margin-bottom: 30px;
+    }
+
+    .sewa .heading h2 {
+        font-size: 3.5rem;
+    }
+
+    .sewa .heading p {
+        font-size: 2rem;
+    }
+
+    .sewa .card-sewa img {
+        width: 230px;
+        height: auto;
+    }
+
+    .sewa .card-sewa h5 {
+        font-size: 2rem;
+    }
+
+    .sewa .card-sewa p {
+        font-size: 1.5rem;
+    }
+
+    .sewa .card-sewa .card-icon {
+        font-size: 1.8rem;
+    }
+
+    .sewa .card-sewa .btn {
+        font-size: 1.5rem;
+    }
+
+    .quote h2, .sewa .syarat-title {
+        font-size: 3.5rem;
+    }
+
+    .quote p {
+        font-size: 1.5rem;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    .swiper .swiper-slide img {
+        width: 400px !important;
+        height: 200px !important;
+    }
+
+    .swiper .swiper-slide .center {
+        font-size: 2rem !important;
+        color: #FFF;
+    }
+
+    .swiper .swiper-slide .card-title {
+        margin-top: 50px;
+
+    }
+
+    .swiper .swiper-slide .card-title h2 {
+        font-size: 3rem;
+    }
+
+    .swiper .swiper-slide .card-title p {
+        font-size: 2rem;
+        font-family: "Open Sans", sans-serif;
+    }
 }
