@@ -596,6 +596,14 @@ p {
         font-size: 2rem;
     }
 
+    .navbar .navbar-collapse a {
+        font-size: 2rem;
+    }
+
+    .navbar .navbar-toggler-icon {
+        font-size: 2rem;
+    }
+
     .banner h1 {
         font-size: 4rem;
     }
