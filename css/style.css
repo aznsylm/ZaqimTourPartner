@@ -150,31 +150,6 @@ p {
     height: 300px;
 }
 
-.tentang .row .middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%)
-}
-
-.tentang .row img:hover {
-    opacity: 0.5;
-}
-
-.tentang .row .middle:hover {
-    opacity: 1;
-}
-
-.tentang .row .middle .lengkap {
-    background-color: #878787;
-    color: white;
-    font-size: 16px;
-    padding: 16px 32px;
-    text-decoration: none;
-}
 
 .tentang .row .img {
     width: 50%;
