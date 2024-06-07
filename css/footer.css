@@ -1,4 +1,28 @@
-.foot {
+#footer .logo img {
+  height: 200px;
+  width: auto;
+}
+
+#footer .title h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 45px;
+  font-weight: 600;
+}
+
+#footer .contact-box a {
+  text-decoration: none;
+  color: black;
+}
+
+#footer .social-box a {
+  font-size: 2rem;
+}
+
+
+
+
+/* ###################################### */
+/* .foot {
   display: flex;
   background-color: #400361;
   justify-content: center;
@@ -199,4 +223,4 @@ footer .follow a {
     justify-content: center;
     gap: 15%;
   }
-}
+} */
