@@ -1,0 +1,226 @@
+#footer .logo img {
+  height: 200px;
+  width: auto;
+}
+
+#footer .title h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 45px;
+  font-weight: 600;
+}
+
+#footer .contact-box a {
+  text-decoration: none;
+  color: black;
+}
+
+#footer .social-box a {
+  font-size: 2rem;
+}
+
+
+
+
+/* ###################################### */
+/* .foot {
+  display: flex;
+  background-color: #400361;
+  justify-content: center;
+  min-height: 2rem;
+  font-family: "Kanit", sans-serif;
+  padding-top: 2rem;
+}
+
+.bottom-footer {
+  background-color: #400361;
+  text-align: center;
+  color: white;
+  font-style: italic;
+}
+
+footer .pages {
+  width: 30%;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+footer .menu-items {
+  display: grid;
+  width: 100%;
+  text-align: center;
+  grid-gap: 0;
+}
+
+footer .menu-items a {
+  text-decoration: none;
+  font-weight: 400;
+  font-family: "Kanit", sans-serif;
+  letter-spacing: 1px;
+  color: #fff;
+  font-size: 1.3rem;
+  padding: 0rem;
+  margin-bottom: 2rem;
+}
+
+footer .logo_bot {
+  display: grid;
+  text-align: center;
+  width: 40%;
+}
+
+
+.logo_bot h3 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "Kanit", sans-serif;
+  font-style: italic;
+}
+
+.newsletter {
+  margin: 20px 0;
+}
+
+.newsletter input {
+  padding: 10px;
+  width: 20vw;
+  border: white;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.newsletter button {
+  padding: 10px;
+  width: 5vw;
+  background-color: #fcdd44;
+  border: none;
+  border-radius: 15px;
+}
+
+footer .follow {
+  display: flex;
+  width: 30%;
+  text-align: center;
+  margin-top: 2rem;
+  align-items: center;
+  flex-direction: column;
+  gap: 15%;
+}
+
+footer .follow-social {
+  column-gap: 10%;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .follow h4 {
+  font-family: "Kanit", sans-serif;
+  letter-spacing: 1px;
+  color: rgb(240, 235, 235);
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  margin-bottom: 0.1rem;
+  text-decoration: none;
+}
+
+footer .follow a {
+  font-size: 1.2em;
+  width: auto;
+  color: rgb(240, 235, 235);
+  transition: 0.5s;
+  
+}
+
+#customer {
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+@media (max-width: 1122px) {
+  html {
+    font-size: 65%;
+  }
+}
+
+@media (max-width: 998px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 817px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media (max-width: 655px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media (max-width: 630px) {
+  footer .logo_bot img {
+    width: 20rem;
+    height: auto;
+  }
+}
+
+@media (max-width: 450px) {
+  footer {
+    flex-direction: column;
+  }
+
+  footer .pages {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    margin-top: 0rem;
+    padding: 20px 20px 0px 20px;
+    gap: 30px;
+  }
+
+  footer .logo_bot {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  footer .logo_bot .newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .newsletter input {
+    border-radius: 10px;
+    width: 75vw;
+  }
+
+  .newsletter button {
+    border-radius: 10px;
+    margin-top: 5px;
+    width: 25vw;
+  }
+
+  footer .follow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 15%;
+  }
+} */
