@@ -6,11 +6,10 @@
     <title>Zaqim Tour Partner</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
 
-    <link rel="shortcut icon" href="img/Sedan.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/fav.png" type="image/x-icon">
 
     <!-- css  -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
 
     <!-- Link Swiper's CSS -->
@@ -31,17 +30,59 @@
 
     <!-- Animation On Scrolling  -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        .tm-box .form2 {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .tm-box .form2 .form-group {
+            margin-bottom: 15px;
+        }
+
+        .tm-box .form2 label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .tm-box .form2 input,
+        .tm-box .form2 textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .tm-box .form2 textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        .tm-box .form2 button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .tm-box .form2 button:hover {
+            background-color: #45a049;
+        }
+    </style>
 
     <script src="https://kit.fontawesome.com/b20fec971f.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="gray-bg">
     <!-- Navbar Start  -->
-    <nav class="navbar navbar-expand-md navbar-dark py-4 px-5">
+    <nav class="navbar navbar-expand-lg navbar-dark py-4 px-5">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <i class="bi bi-car-front "></i> ZaqimTourPartner
-            </a>
+            <a class="navbar-brand" href="index.html">ZaqimTourPartner</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -63,10 +104,6 @@
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="index.html">Kendaraan</a></li>
                             <li><a class="dropdown-item" href="index.html">Review</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">lainnya</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -109,7 +146,7 @@
                         width="600" height="350" style="border:1px solid; border-radius: 10px;" allowfullscreen=""
                         loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div class="col-lg-6 col-md-6 col-12">
+                <!-- <div class="col-lg-6 col-md-6 col-12">
                     <form class="row g-3">
                         <div class="col-md-6">
                             <label for="inputNama" class="form-label">Nama</label>
@@ -164,6 +201,26 @@
                         <div class="col-12">
                             <button type="submit" class="btn btn-primary">Kirim</button>
                         </div>
+                    </form>
+                </div> -->
+                <div class="col-lg-6 col-md-6 col-12 form2">
+                    <form action="#" onsubmit="sendMessage()">
+                        <div class="form-group">
+                            <label for="nama">Nama:</label>
+                            <input type="text" id="nama" name="nama" placeholder="Masukkan Nama Anda">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Nomor WA:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Masukkan Nomor Whatsapp Anda">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Pesan:</label>
+                            <textarea id="message" name="message" placeholder="Masukkan Pesan Anda"></textarea>
+                        </div>
+
+                        <button type="submit">Submit</button>
                     </form>
                 </div>
             </div>
@@ -263,75 +320,21 @@
         </div>
     </section>
 
+    <button id="scrollToTopBtn" title="Go to top"><i class="bi bi-arrow-up-short hvr-float"></i></button>
+
     <!-- Footer  -->
-    <footer class="foot">
-        <div class="pages">
-            <div class="menu-items">
-                <a href="index.html"><span class="hvr-underline-from-left hvr-icon-hang">Beranda</span></a>
-                <a href="about.html"><span class="hvr-underline-from-left hvr-icon-hang">Tentang Kami</span></a>
-                <a href="index.html"><span class="hvr-underline-from-left hvr-icon-hang">Daftar Sewa</span></a>
-                <a href="contact.html"><span class="hvr-underline-from-left hvr-icon-hang">Kontak</span></a>
+    <footer id="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 text-center">
+                    <p>&copy;Copyright 2024 | ZaqimTourPartner Yogyakarta</p>
+                </div>
             </div>
-        </div>
-
-        <div class="logo_bot">
-            <h3>Pilih ZaqimTourPartner Sebagai Tour Guide Anda</h3>
-            <div class="newsletter">
-                <input type="text" name="newsletter" value="" placeholder="Masukkan Email Kamu">
-                <button type="submit" name="submit">Kirim </button>
-            </div>
-            <div class="bottom-footer">
-                <p id="customer">Keamanan dan Kenyamanan Anda adalah Prioritas Bagi Kami, Salam hangat</p><br>
-                <p>Copyrights &copy <span id="copyrightYear">2024</span> ZaqimTourPartner | Designed by <a
-                        href="https://www.linkedin.com/in/aizan-syalim-080a44276" style="text-decoration: none;">Aizan
-                        Syalim</a>
-                </p>
-            </div>
-        </div>
-
-        <div class="follow">
-            <h4 class="hvr-underline-from-left hvr-icon-hang">Follow Us</h4>
-            <div class="follow-social">
-                <a href="https://www.linkedin.com/in/aizan-syalim-080a44276" target="_blank" class="linkedin"><i <i
-                        class="fa-brands fa-linkedin-in fa-2xl hvr-grow"></i></a>
-                <a href="https://www.instagram.com/zansylm/" target="_blank" class="instagram"><i
-                        class="fa-brands fa-instagram fa-2xl hvr-grow"></i></a>
-                <a href="https://github.com/aznsylm" target="_blank" class="twitter"><i
-                        class="fa-brands fa-github fa-2xl hvr-grow"></i></a>
-            </div>
-
         </div>
     </footer>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- Initialize Swiper -->
-    <script>
-        const progressCircle = document.querySelector(".autoplay-progress svg");
-        const progressContent = document.querySelector(".autoplay-progress span");
-        var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 30,
-            centeredSlides: true,
-            autoplay: {
-                delay: 2000,
-                disableOnInteraction: false
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev"
-            },
-            // on: {
-            //     autoplayTimeLeft(s, time, progress) {
-            //         progressCircle.style.setProperty("--progress", 1 - progress);
-            //         progressContent.textContent = `${Math.ceil(time / 1000)}s`;
-            //     }
-            // }
-        });
-    </script>
 
     <!-- bootstrap  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -342,6 +345,15 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+
+    <script src="script.js"></script>
+    <script>
+        function sendMessage() {
+            const urlToWhatsapp = `https://wa.me/6282332340653?text=Halo, nama saya ${nama.value}, ${phone.value}, ${message.value}`;
+
+            window.open(urlToWhatsapp, "_blank");
+        }
     </script>
 </body>
 

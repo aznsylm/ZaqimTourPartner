@@ -6,11 +6,10 @@
     <title>Zaqim Tour Partner</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
 
-    <link rel="shortcut icon" href="img/Sedan.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/fav.png" type="image/x-icon">
 
     <!-- css  -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
 
     <!-- Link Swiper's CSS -->
@@ -38,11 +37,9 @@
 
 <body class="gray-bg">
     <!-- Navbar Start  -->
-    <nav class="navbar navbar-expand-md navbar-dark py-4 px-5">
+    <nav class="navbar navbar-expand-lg navbar-dark py-4 px-5">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <i class="bi bi-car-front "></i> ZaqimTourPartner
-            </a>
+            <a class="navbar-brand" href="index.html">ZaqimTourPartner</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -64,10 +61,6 @@
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="index.html">Kendaraan</a></li>
                             <li><a class="dropdown-item" href="index.html">Review</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">lainnya</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -240,43 +233,16 @@
         </div>
     </section>
 
+    <button id="scrollToTopBtn" title="Go to top"><i class="bi bi-arrow-up-short hvr-float"></i></button>
+
     <!-- Footer  -->
-    <footer class="foot">
-        <div class="pages">
-            <div class="menu-items">
-                <a href="index.html"><span class="hvr-underline-from-left hvr-icon-hang">Beranda</span></a>
-                <a href="about.html"><span class="hvr-underline-from-left hvr-icon-hang">Tentang Kami</span></a>
-                <a href="index.html"><span class="hvr-underline-from-left hvr-icon-hang">Daftar Sewa</span></a>
-                <a href="contact.html"><span class="hvr-underline-from-left hvr-icon-hang">Kontak</span></a>
+    <footer id="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 text-center">
+                    <p>&copy;Copyright 2024 | ZaqimTourPartner Yogyakarta</p>
+                </div>
             </div>
-        </div>
-
-        <div class="logo_bot">
-            <h3>Pilih ZaqimTourPartner Sebagai Tour Guide Anda</h3>
-            <div class="newsletter">
-                <input type="text" name="newsletter" value="" placeholder="Masukkan Email Kamu">
-                <button type="submit" name="submit">Kirim </button>
-            </div>
-            <div class="bottom-footer">
-                <p id="customer">Keamanan dan Kenyamanan Anda adalah Prioritas Bagi Kami, Salam hangat</p><br>
-                <p>Copyrights &copy <span id="copyrightYear">2024</span> ZaqimTourPartner | Designed by <a
-                        href="https://www.linkedin.com/in/aizan-syalim-080a44276" style="text-decoration: none;">Aizan
-                        Syalim</a>
-                </p>
-            </div>
-        </div>
-
-        <div class="follow">
-            <h4 class="hvr-underline-from-left hvr-icon-hang">Follow Us</h4>
-            <div class="follow-social">
-                <a href="https://www.linkedin.com/in/aizan-syalim-080a44276" target="_blank" class="linkedin"><i <i
-                        class="fa-brands fa-linkedin-in fa-2xl hvr-grow"></i></a>
-                <a href="https://www.instagram.com/zansylm/" target="_blank" class="instagram"><i
-                        class="fa-brands fa-instagram fa-2xl hvr-grow"></i></a>
-                <a href="https://github.com/aznsylm" target="_blank" class="twitter"><i
-                        class="fa-brands fa-github fa-2xl hvr-grow"></i></a>
-            </div>
-
         </div>
     </footer>
 
@@ -290,6 +256,7 @@
     <script>
         AOS.init();
     </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

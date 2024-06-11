@@ -97,9 +97,43 @@ p {
     transform: scale(1.1)
 }
 
-/* HOVER END */
+#scrollToTopBtn {
+    display: none;
+    /* Disembunyikan secara default */
+    position: fixed;
+    /* Posisi tetap di kanan bawah */
+    bottom: 50px;
+    /* Jarak dari bawah */
+    right: 50px;
+    /* Jarak dari kanan */
+    z-index: 99;
+    /* Pastikan tombol berada di atas konten lainnya */
+    font-size: 18px;
+    /* Ukuran font */
+    border: none;
+    /* Tanpa border */
+    outline: none;
+    /* Tanpa outline */
+    background-color: #007bff;
+    /* Warna background */
+    color: white;
+    /* Warna teks */
+    cursor: pointer;
+    /* Mengubah kursor menjadi pointer */
+    padding: 10px 15px;
+    /* Padding */
+    border-radius: 50%;
+    /* Membuat tombol bulat */
+    transition: opacity 0.3s;
+    /* Transisi untuk efek kemunculan */
+}
 
-/* ####################################################### */
+#scrollToTopBtn:hover {
+    background-color: #0056b3;
+    /* Warna background saat hover */
+}
+
+/* ************************************************** SCROLL BUTTON ************************************************** */
 
 /* Navbar  */
 .navbar {
@@ -128,9 +162,6 @@ p {
     font-style: normal;
 
 }
-
-/* Banner */
-
 
 /* TENTANG KAMI */
 .tentang .title-box p {
@@ -181,9 +212,6 @@ p {
 .sewa .card-sewa .card-box img {
     border-radius: 20px;
 }
-
-/* Quote */
-
 
 /* Swiper  */
 .swiper {
@@ -272,7 +300,6 @@ p {
 }
 
 /* HALAMAN TENTANG KAMI */
-/* ################################################# */
 .banner {
     background-size: cover;
     background-position: center;
@@ -290,7 +317,6 @@ p {
     background-image: url("../img/img-mobil/banner-2.jpg");
 }
 
-
 .transparent-bg {
     background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.6));
     width: 100%;
@@ -305,7 +331,6 @@ p {
     width: auto;
     height: 250px;
 }
-
 
 .tm-box .tm-section-header {
     margin: 0;
@@ -375,6 +400,16 @@ p {
 
 .tm-teks .tm-section-heade .row {
     display: inline;
+}
+
+#footer {
+    padding: 50px 0 50px 0;
+    background-color: #400361;
+}
+
+#footer p {
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
 }
 
 @media (min-width: 767px) and (max-width: 1199px) {
@@ -480,6 +515,11 @@ p {
         font-size: 2.6rem;
     }
 
+    img.card-img-top {
+        /* height: 150px; */
+        object-fit: cover;
+    }
+
     .quote h2, .sewa .syarat-title {
         font-size: 3.5rem;
     }
@@ -562,6 +602,10 @@ p {
 }
 
 @media (max-width: 766px) {
+    html {
+        font-size: 45%;
+    }
+
     .navbar .navbar-brand {
         font-size: 2rem;
     }
@@ -572,6 +616,12 @@ p {
 
     .navbar .navbar-toggler-icon {
         font-size: 2rem;
+    }
+
+    .banner {
+        background-size: cover;
+        background-position: center;
+        height: 600px;
     }
 
     .banner h1 {
@@ -591,13 +641,41 @@ p {
         font-size: 1.5rem;
     }
 
-    .tentang .row .image-box {
-        width: 250px;
+    .tentang .row img {
+        opacity: 1;
+        width: auto;
+        height: 200px;
+        align-items: center;
+        justify-content: center;
     }
 
     .sewa .card-sewa .card {
         margin-left: 80px;
         margin-right: 80px;
+    }
+
+    .sewa .heading h2, .quote h2, .sewa .syarat-title {
+        font-size: 3rem;
+    }
+
+    .sewa .heading p, .quote p {
+        font-size: 1.5rem;
+    }
+
+    .sewa .card-sewa .card h5 {
+        font-size: 3rem;
+    }
+
+    .sewa .card-sewa .card p {
+        font-size: 1.2rem;
+    }
+
+    .sewa .card-sewa .card p strong, .sewa .card-sewa .card p i {
+        font-size: 2rem;
+    }
+
+    .sewa .card-sewa .card .card-icon {
+        font-size: 1.5rem;
     }
 
     .swiper .swiper-slide img {
@@ -620,6 +698,25 @@ p {
         font-family: "Open Sans", sans-serif;
     }
 
+    .swiper-button-next,
+    .swiper-button-prev {
+        position: absolute;
+        /* Make buttons absolute within the image */
+        transform: translateY(-100px);
+        /* Adjust vertical positioning if needed */
+        opacity: 1;
+        /* Make buttons fully visible */
+    }
+
+    .swiper-button-next {
+        right: 20px;
+        /* Adjust horizontal position as needed */
+    }
+
+    .swiper-button-prev {
+        left: 20px;
+        /* Adjust horizontal position as needed */
+    }
 
     /* About  */
     .banner .btn {
@@ -656,6 +753,16 @@ p {
     }
 
     .tm-box .text-header p {
+        font-size: 1.5rem;
+    }
+
+    #footer {
+        padding: 30px 0 30px;
+    }
+
+    #footer p {
+        color: #fff;
+        font-family: "Open Sans", sans-serif;
         font-size: 1.5rem;
     }
 }
